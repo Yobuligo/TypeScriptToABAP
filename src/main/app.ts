@@ -1,4 +1,5 @@
 import {
+  Class,
   Constants,
   DataDefinition,
   ImpParameter,
@@ -13,6 +14,10 @@ import { newLine } from "./core/NewLine";
 import { println } from "./core/Println";
 
 class Person {}
+
+
+println(Class("test").build().toABAP())
+newLine()
 
 println(
   Interface("if_test")

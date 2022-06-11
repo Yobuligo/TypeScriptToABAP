@@ -10,6 +10,8 @@ var Person = /** @class */ (function () {
     }
     return Person;
 }());
+(0, Println_1.println)((0, builder_1.Class)("test").build().toABAP());
+(0, NewLine_1.newLine)();
 (0, Println_1.println)((0, builder_1.Interface)("if_test")
     .addInterface((0, builder_1.Interface)("if_child").build())
     .addInterface((0, builder_1.Interface)("if_child2").build())
