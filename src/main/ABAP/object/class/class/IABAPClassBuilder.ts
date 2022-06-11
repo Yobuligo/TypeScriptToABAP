@@ -7,5 +7,6 @@ import { IABAPClass } from "./IABAPClass";
 export interface IABAPClassBuilder extends IABAPBuilder<IABAPClass> {
   addInterface(abapInterface: IABAPInterface): IABAPClassBuilder;
   addConstants(abapConstants: IABAPConstants): IABAPClassBuilder;
+  
   addMethod(abapClassMethod: IABAPClassMethod): IABAPClassBuilder;
 }

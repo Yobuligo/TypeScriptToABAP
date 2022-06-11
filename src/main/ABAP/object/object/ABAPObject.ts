@@ -1,3 +1,5 @@
+import { Renderer } from "../../builder/builder";
+import { ABAPRenderer } from "../../core/ABAPRenderer";
 import { IABAP } from "../../core/IABAP";
 import { IABAPConstants } from "../../variables/constant/IABAPConstants";
 import { IABAPInterface } from "../interface/IABAPInterface";
@@ -42,18 +44,6 @@ export class ABAPObject implements IABAPObject {
   }
 
   private renderABAPs(abaps?: IABAP[]): string {
-    if (abaps == undefined || abaps == null || abaps.length == 0) {
-      return "";
-    }
-
-    let code = "\n";
-    abaps.forEach((abap) => {
-      if (code == "") {
-        code = `  ${abap.toABAP()}`;
-      } else {
-        code += `\n  ${abap.toABAP()}`;
-      }
-    });
-    return code;
+    return new ABAPRenderer().render(abaps);
   }
 }

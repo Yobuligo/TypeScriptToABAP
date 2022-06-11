@@ -1,6 +1,8 @@
 import { ABAPParamKind } from "../core/ABAPParamKind";
+import { ABAPRenderer } from "../core/ABAPRenderer";
 import { ABAPType } from "../core/ABAPType";
 import { ABAPTypeKind } from "../core/ABAPTypeKind";
+import { IABAPRenderer } from "../core/IABAPRenderer";
 import { ABAPClassBuilder } from "../object/class/class/ABAPClassBuilder";
 import { IABAPClassBuilder } from "../object/class/class/IABAPClassBuilder";
 import { ABAPClassMethodBuilder } from "../object/class/classMethod/ABAPClassMethodBuilder";
@@ -96,4 +98,8 @@ export function Variable(
   value?: string
 ): IABAPVariable {
   return new ABAPVariable(name, typeKind, type, value);
+}
+
+export function Renderer(): IABAPRenderer {
+  return new ABAPRenderer();
 }

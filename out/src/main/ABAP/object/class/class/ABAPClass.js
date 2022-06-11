@@ -35,10 +35,26 @@ var ABAPClass = /** @class */ (function (_super) {
         return "CLASS ".concat(this.name, " DEFINITION.").concat(code, "\nENDCLASS.");
     };
     ABAPClass.prototype.toABAPImplementation = function () {
-        return "CLASS ".concat(this.name, " IMPLEMENTATION.\nENDCLASS.");
+        var code = this.renderMethodBody();
+        if (code != "") {
+            code += "\n";
+        }
+        return "CLASS ".concat(this.name, " IMPLEMENTATION.").concat(code, "\nENDCLASS.");
     };
     ABAPClass.prototype.toABAP = function () {
         return "".concat(this.toABAPDefinition(), "\n\n").concat(this.toABAPImplementation());
+    };
+    ABAPClass.prototype.renderMethodBody = function () {
+        if (this.methods == undefined ||
+            this.methods == null ||
+            this.methods.length == 0) {
+            return "";
+        }
+        var code = "";
+        this.methods.forEach(function (method) {
+            code += "\n\n  METHOD ".concat(method.name, ".\n  ENDMETHOD.");
+        });
+        return code;
     };
     return ABAPClass;
 }(ABAPObject_1.ABAPObject));

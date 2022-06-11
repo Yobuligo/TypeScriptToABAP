@@ -23,10 +23,30 @@ export class ABAPClass extends ABAPObject implements IABAPClass {
   }
 
   toABAPImplementation(): string {
-    return `CLASS ${this.name} IMPLEMENTATION.\nENDCLASS.`;
+    let code = this.renderMethodBody();
+    if (code != "") {
+      code += `\n`;
+    }
+    return `CLASS ${this.name} IMPLEMENTATION.${code}\nENDCLASS.`;
   }
 
   toABAP(): string {
     return `${this.toABAPDefinition()}\n\n${this.toABAPImplementation()}`;
+  }
+
+  private renderMethodBody(): string {
+    if (
+      this.methods == undefined ||
+      this.methods == null ||
+      this.methods.length == 0
+    ) {
+      return "";
+    }
+
+    let code = "";
+    this.methods.forEach((method) => {
+      code += `\n\n  METHOD ${method.name}.\n  ENDMETHOD.`;
+    });
+    return code;
   }
 }

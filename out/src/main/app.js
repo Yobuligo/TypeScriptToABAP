@@ -12,6 +12,10 @@ var Person = /** @class */ (function () {
 }());
 (0, Println_1.println)((0, builder_1.Class)("test")
     .addConstants((0, builder_1.Constants)("male", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "MALE"))
+    .addMethod((0, builder_1.ClassMethod)("to_string").build())
+    .addMethod((0, builder_1.ClassMethod)("to_string2")
+    .addImpParameter((0, builder_1.ImpParameter)("iv_firstname", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "Stacey"))
+    .build())
     .build()
     .toABAP());
 (0, NewLine_1.newLine)();

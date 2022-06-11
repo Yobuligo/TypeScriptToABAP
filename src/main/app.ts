@@ -19,6 +19,14 @@ class Person {}
 println(
   Class("test")
     .addConstants(Constants("male", ABAPTypeKind.type, ABAPType.string, "MALE"))
+    .addMethod(ClassMethod("to_string").build())
+    .addMethod(
+      ClassMethod("to_string2")
+        .addImpParameter(
+          ImpParameter("iv_firstname", ABAPTypeKind.type, ABAPType.string, "Stacey")
+        )
+        .build()
+    )
     .build()
     .toABAP()
 );
