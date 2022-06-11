@@ -19,14 +19,21 @@ exports.ABAPClassMethod = void 0;
 var ABAPMethod_1 = require("../../method/ABAPMethod");
 var ABAPClassMethod = /** @class */ (function (_super) {
     __extends(ABAPClassMethod, _super);
-    function ABAPClassMethod() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function ABAPClassMethod(name, impParameters, expParameters, chgParameters, retParameter, code) {
+        var _this = _super.call(this, name, impParameters, expParameters, chgParameters, retParameter) || this;
+        _this.code = code;
+        return _this;
     }
     ABAPClassMethod.prototype.toABAPDefinition = function () {
-        throw new Error("Method not implemented.");
+        return _super.prototype.toABAP.call(this);
     };
     ABAPClassMethod.prototype.toABAPImplementation = function () {
-        throw new Error("Method not implemented.");
+        if (this.code == undefined || this.code == null) {
+            return "METHOD ".concat(this.name, ".\nENDMETHOD.");
+        }
+        else {
+            return "METHOD ".concat(this.name, ".\n\n").concat(this.code, "\nENDMETHOD.");
+        }
     };
     return ABAPClassMethod;
 }(ABAPMethod_1.ABAPMethod));

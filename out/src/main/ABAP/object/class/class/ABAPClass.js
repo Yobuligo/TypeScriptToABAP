@@ -15,21 +15,32 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ABAPInterface = void 0;
-var ABAPObject_1 = require("../object/ABAPObject");
-var ABAPInterface = /** @class */ (function (_super) {
-    __extends(ABAPInterface, _super);
-    function ABAPInterface() {
-        return _super !== null && _super.apply(this, arguments) || this;
+exports.ABAPClass = void 0;
+var ABAPObject_1 = require("../../object/ABAPObject");
+var ABAPClass = /** @class */ (function (_super) {
+    __extends(ABAPClass, _super);
+    function ABAPClass(name, interfaces, constants, methods) {
+        var _this = _super.call(this, name, interfaces, constants, methods) || this;
+        _this.name = name;
+        _this.interfaces = interfaces;
+        _this.constants = constants;
+        _this.methods = methods;
+        return _this;
     }
-    ABAPInterface.prototype.toABAP = function () {
+    ABAPClass.prototype.toABAPDefinition = function () {
         var code = _super.prototype.toABAP.call(this);
         if (code != "") {
             code += "\n";
         }
-        return "INTERFACE ".concat(this.name, ".").concat(code, "\nENDINTERFACE.");
+        return "CLASS ".concat(this.name, " DEFINITION.").concat(code, "\nENDCLASS.");
     };
-    return ABAPInterface;
+    ABAPClass.prototype.toABAPImplementation = function () {
+        return "CLASS ".concat(this.name, " IMPLEMENTATION.\nENDCLASS.");
+    };
+    ABAPClass.prototype.toABAP = function () {
+        return "".concat(this.toABAPDefinition(), "\n\n").concat(this.toABAPImplementation());
+    };
+    return ABAPClass;
 }(ABAPObject_1.ABAPObject));
-exports.ABAPInterface = ABAPInterface;
-//# sourceMappingURL=ABAPInterface.js.map
+exports.ABAPClass = ABAPClass;
+//# sourceMappingURL=ABAPClass.js.map

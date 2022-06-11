@@ -1,13 +1,14 @@
 import { ABAPParamKind } from "../core/ABAPParamKind";
 import { ABAPType } from "../core/ABAPType";
 import { ABAPTypeKind } from "../core/ABAPTypeKind";
-import { ABAPClassBuilder } from "../object/class/ABAPClassBuilder";
+import { ABAPClassBuilder } from "../object/class/class/ABAPClassBuilder";
+import { IABAPClassBuilder } from "../object/class/class/IABAPClassBuilder";
 import { ABAPClassMethodBuilder } from "../object/class/classMethod/ABAPClassMethodBuilder";
 import { IABAPClassMethodBuilder } from "../object/class/classMethod/IABAPClassMethodBuilder";
-import { IABAPClassBuilder } from "../object/class/IABAPClassBuilder";
 import { ABAPInterfaceBuilder } from "../object/interface/ABAPInterfaceBuilder";
 import { IABAPInterfaceBuilder } from "../object/interface/IABAPInterfaceBuilder";
 import { ABAPMethodBuilder } from "../object/method/ABAPMethodBuilder";
+import { IABAPMethod } from "../object/method/IABAPMethod";
 import { IABAPMethodBuilder } from "../object/method/IABAPMethodBuilder";
 import { ABAPConstants } from "../variables/constant/ABAPConstants";
 import { IABAPConstants } from "../variables/constant/IABAPConstants";
@@ -30,7 +31,7 @@ export function Interface(name: string): IABAPInterfaceBuilder {
   return new ABAPInterfaceBuilder(name);
 }
 
-export function Method(name: string): IABAPMethodBuilder {
+export function Method(name: string): IABAPMethodBuilder<IABAPMethod> {
   return new ABAPMethodBuilder(name);
 }
 

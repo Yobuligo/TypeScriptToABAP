@@ -10,7 +10,14 @@ var Person = /** @class */ (function () {
     }
     return Person;
 }());
+(0, Println_1.println)((0, builder_1.Class)("test")
+    .addConstants((0, builder_1.Constants)("male", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "MALE"))
+    .build()
+    .toABAP());
+(0, NewLine_1.newLine)();
 (0, Println_1.println)((0, builder_1.Class)("test").build().toABAP());
+(0, NewLine_1.newLine)();
+(0, Println_1.println)((0, builder_1.ClassMethod)("to_string").build().toABAP());
 (0, NewLine_1.newLine)();
 (0, Println_1.println)((0, builder_1.Interface)("if_test")
     .addInterface((0, builder_1.Interface)("if_child").build())

@@ -1,5 +1,6 @@
 import {
   Class,
+  ClassMethod,
   Constants,
   DataDefinition,
   ImpParameter,
@@ -15,9 +16,19 @@ import { println } from "./core/Println";
 
 class Person {}
 
+println(
+  Class("test")
+    .addConstants(Constants("male", ABAPTypeKind.type, ABAPType.string, "MALE"))
+    .build()
+    .toABAP()
+);
+newLine();
 
-println(Class("test").build().toABAP())
-newLine()
+println(Class("test").build().toABAP());
+newLine();
+
+println(ClassMethod("to_string").build().toABAP());
+newLine();
 
 println(
   Interface("if_test")

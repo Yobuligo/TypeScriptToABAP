@@ -1,5 +1,7 @@
-import { IABAPBuilder } from "../../../core/IABAPBuilder";
+import { IABAPMethodBuilder } from "../../method/IABAPMethodBuilder";
 import { IABAPClassMethod } from "./IABAPClassMethod";
 
 export interface IABAPClassMethodBuilder
-  extends IABAPBuilder<IABAPClassMethod> {}
+  extends IABAPMethodBuilder<IABAPClassMethod> {
+  setCode(code: string[]): IABAPClassMethodBuilder;
+}

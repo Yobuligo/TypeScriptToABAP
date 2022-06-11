@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Variable = exports.DataDefinition = exports.Constants = exports.RetParameter = exports.ChgParameter = exports.ExpParameter = exports.ImpParameter = exports.Method = exports.Interface = exports.Class = void 0;
-var ABAPClassBuilder_1 = require("../object/class/ABAPClassBuilder");
+exports.Variable = exports.DataDefinition = exports.Constants = exports.RetParameter = exports.ChgParameter = exports.ExpParameter = exports.ImpParameter = exports.Method = exports.Interface = exports.ClassMethod = exports.Class = void 0;
+var ABAPClassBuilder_1 = require("../object/class/class/ABAPClassBuilder");
+var ABAPClassMethodBuilder_1 = require("../object/class/classMethod/ABAPClassMethodBuilder");
 var ABAPInterfaceBuilder_1 = require("../object/interface/ABAPInterfaceBuilder");
 var ABAPMethodBuilder_1 = require("../object/method/ABAPMethodBuilder");
 var ABAPConstants_1 = require("../variables/constant/ABAPConstants");
@@ -12,6 +13,10 @@ function Class(name) {
     return new ABAPClassBuilder_1.ABAPClassBuilder(name);
 }
 exports.Class = Class;
+function ClassMethod(name) {
+    return new ABAPClassMethodBuilder_1.ABAPClassMethodBuilder(name);
+}
+exports.ClassMethod = ClassMethod;
 function Interface(name) {
     return new ABAPInterfaceBuilder_1.ABAPInterfaceBuilder(name);
 }

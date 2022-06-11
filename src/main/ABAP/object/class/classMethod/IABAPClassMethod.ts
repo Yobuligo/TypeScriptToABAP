@@ -6,5 +6,5 @@ export interface IABAPClassMethod
   extends IABAPMethod,
     IABAPDefinition,
     IABAPImplementation {
-  readonly code: string[];
+  readonly code?: string[];
 }

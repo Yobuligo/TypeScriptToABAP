@@ -1,10 +1,3 @@
-import { IABAP } from "../../core/IABAP";
-import { IABAPConstants } from "../../variables/constant/IABAPConstants";
-import { IABAPMethod } from "../method/IABAPMethod";
+import { IABAPObject } from "../object/IABAPObject";
 
-export interface IABAPInterface extends IABAP {
-  readonly interface?: IABAPInterface[];
-  readonly constants?: IABAPConstants[];
-  readonly methods?: IABAPMethod[];
-  readonly name: string;
-}
+export interface IABAPInterface extends IABAPObject {}

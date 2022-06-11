@@ -4,38 +4,38 @@ import { ABAPMethod } from "./ABAPMethod";
 import { IABAPMethod } from "./IABAPMethod";
 import { IABAPMethodBuilder } from "./IABAPMethodBuilder";
 
-export class ABAPMethodBuilder implements IABAPMethodBuilder {
-  private abapImpParameters: IABAPParameter<ABAPParamKind.importing>[] = [];
-  private abapExpParameters: IABAPParameter<ABAPParamKind.exporting>[] = [];
-  private abapChgParameters: IABAPParameter<ABAPParamKind.changing>[] = [];
-  private abapRetParameter?: IABAPParameter<ABAPParamKind.returning> = null;
+export class ABAPMethodBuilder implements IABAPMethodBuilder<IABAPMethod> {
+  protected abapImpParameters: IABAPParameter<ABAPParamKind.importing>[] = [];
+  protected abapExpParameters: IABAPParameter<ABAPParamKind.exporting>[] = [];
+  protected abapChgParameters: IABAPParameter<ABAPParamKind.changing>[] = [];
+  protected abapRetParameter?: IABAPParameter<ABAPParamKind.returning> = null;
 
   constructor(readonly name: string) {}
 
   addImpParameter(
     abapImpParameter: IABAPParameter<ABAPParamKind.importing>
-  ): IABAPMethodBuilder {
+  ): IABAPMethodBuilder<IABAPMethod> {
     this.abapImpParameters.push(abapImpParameter);
     return this;
   }
 
   addExpParameter(
     abapExpParameter: IABAPParameter<ABAPParamKind.exporting>
-  ): IABAPMethodBuilder {
+  ): IABAPMethodBuilder<IABAPMethod> {
     this.abapExpParameters.push(abapExpParameter);
     return this;
   }
 
   addChgParameter(
     abapChgParameter: IABAPParameter<ABAPParamKind.changing>
-  ): IABAPMethodBuilder {
+  ): IABAPMethodBuilder<IABAPMethod> {
     this.abapChgParameters.push(abapChgParameter);
     return this;
   }
 
   setRetParameter(
     abapRetParameter: IABAPParameter<ABAPParamKind.returning>
-  ): IABAPMethodBuilder {
+  ): IABAPMethodBuilder<IABAPMethod> {
     this.abapRetParameter = abapRetParameter;
     return this;
   }

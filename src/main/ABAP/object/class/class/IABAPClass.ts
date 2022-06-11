@@ -1,10 +1,8 @@
-import { IABAP } from "../../core/IABAP";
-import { IABAPDefinition } from "./IABAPDefinition";
-import { IABAPImplementation } from "./IABAPImplementation";
+import { IABAPObject } from "../../object/IABAPObject";
+import { IABAPDefinition } from "../IABAPDefinition";
+import { IABAPImplementation } from "../IABAPImplementation";
 
 export interface IABAPClass
-  extends IABAPDefinition,
-    IABAPImplementation,
-    IABAP {
-  readonly name: string;
-}
+  extends IABAPObject,
+    IABAPDefinition,
+    IABAPImplementation {}
