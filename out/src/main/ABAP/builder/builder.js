@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Variable = exports.DataDefinition = exports.Constants = exports.RetParameter = exports.ChgParameter = exports.ExpParameter = exports.ImpParameter = exports.Method = exports.Interface = exports.ClassMethod = exports.Class = void 0;
+exports.Renderer = exports.Variable = exports.DataDefinition = exports.Constants = exports.RetParameter = exports.ChgParameter = exports.ExpParameter = exports.ImpParameter = exports.Method = exports.Interface = exports.ClassMethod = exports.Class = void 0;
+var ABAPRenderer_1 = require("../core/ABAPRenderer");
 var ABAPClassBuilder_1 = require("../object/class/class/ABAPClassBuilder");
 var ABAPClassMethodBuilder_1 = require("../object/class/classMethod/ABAPClassMethodBuilder");
 var ABAPInterfaceBuilder_1 = require("../object/interface/ABAPInterfaceBuilder");
@@ -53,4 +54,8 @@ function Variable(name, typeKind, type, value) {
     return new ABAPVariable_1.ABAPVariable(name, typeKind, type, value);
 }
 exports.Variable = Variable;
+function Renderer() {
+    return new ABAPRenderer_1.ABAPRenderer();
+}
+exports.Renderer = Renderer;
 //# sourceMappingURL=builder.js.map

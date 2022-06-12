@@ -44,6 +44,6 @@ export class ABAPObject implements IABAPObject {
   }
 
   private renderABAPs(abaps?: IABAP[]): string {
-    return new ABAPRenderer().render(abaps);
+    return Renderer().render(abaps);
   }
 }

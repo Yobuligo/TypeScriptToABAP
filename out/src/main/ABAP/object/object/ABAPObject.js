@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ABAPObject = void 0;
+var builder_1 = require("../../builder/builder");
 var ABAPObject = /** @class */ (function () {
     function ABAPObject(name, interfaces, constants, methods) {
         this.name = name;
@@ -33,19 +34,7 @@ var ABAPObject = /** @class */ (function () {
         return this.renderABAPs(this.methods);
     };
     ABAPObject.prototype.renderABAPs = function (abaps) {
-        if (abaps == undefined || abaps == null || abaps.length == 0) {
-            return "";
-        }
-        var code = "\n";
-        abaps.forEach(function (abap) {
-            if (code == "") {
-                code = "  ".concat(abap.toABAP());
-            }
-            else {
-                code += "\n  ".concat(abap.toABAP());
-            }
-        });
-        return code;
+        return (0, builder_1.Renderer)().render(abaps);
     };
     return ABAPObject;
 }());
