@@ -1,4 +1,3 @@
-import { IABAPBuilder } from "../../../core/IABAPBuilder";
 import { IABAPConstant } from "../../../variables/constant/IABAPConstant";
 import { IABAPVariable } from "../../../variables/variable/IABAPVariable";
 import { IABAPClassMethod } from "../classMethod/IABAPClassMethod";
@@ -15,17 +14,23 @@ export abstract class ABAPSectionBuilder<
   protected abapVariables: IABAPVariable[] = [];
   protected abapMethods: IABAPClassMethod[] = [];
 
-  addConstant(abapConstants: IABAPConstant): IABAPBuilder<TABAPSection> {
+  addConstant(
+    abapConstants: IABAPConstant
+  ): IABAPSectionBuilder<TSectionType, TABAPSection> {
     this.abapConstants.push(abapConstants);
     return this;
   }
 
-  addVariable(abapVariable: IABAPVariable): IABAPBuilder<TABAPSection> {
+  addVariable(
+    abapVariable: IABAPVariable
+  ): IABAPSectionBuilder<TSectionType, TABAPSection> {
     this.abapVariables.push(abapVariable);
     return this;
   }
 
-  addMethod(abapMethod: IABAPClassMethod): IABAPBuilder<TABAPSection> {
+  addMethod(
+    abapMethod: IABAPClassMethod
+  ): IABAPSectionBuilder<TSectionType, TABAPSection> {
     this.abapMethods.push(abapMethod);
     return this;
   }

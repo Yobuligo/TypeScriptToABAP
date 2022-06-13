@@ -6,6 +6,9 @@ import {
   ImpParameter,
   Interface,
   Method,
+  PrivateSection,
+  ProtectedSection,
+  PublicSection,
   RetParameter,
   Variable,
 } from "./ABAP/builder/builder";
@@ -17,13 +20,41 @@ import { println } from "./core/Println";
 class Person {}
 
 println(
+  PublicSection()
+    .addMethod(ClassMethod("myClassMethod").build())
+    .addConstant(Constant("skin", ABAPTypeKind.type, ABAPType.string, "mySkin"))
+    .build()
+    .toABAP()
+);
+newLine();
+
+println(
+  PrivateSection()
+    .addConstant(Constant("size", ABAPTypeKind.type, ABAPType.string, "medium"))
+    .build()
+    .toABAP()
+);
+newLine();
+
+println(ProtectedSection().build().toABAP());
+newLine();
+
+println(PublicSection().build().toABAP());
+newLine();
+
+println(
   Class("test")
     .addConstant(Constant("male", ABAPTypeKind.type, ABAPType.string, "MALE"))
     .addMethod(ClassMethod("to_string").build())
     .addMethod(
       ClassMethod("to_string2")
         .addImpParameter(
-          ImpParameter("iv_firstname", ABAPTypeKind.type, ABAPType.string, "Stacey")
+          ImpParameter(
+            "iv_firstname",
+            ABAPTypeKind.type,
+            ABAPType.string,
+            "Stacey"
+          )
         )
         .build()
     )
@@ -102,9 +133,7 @@ newLine();
 println(Method("to_string").build().toABAP());
 newLine();
 
-println(
-  Constant("state", ABAPTypeKind.type, ABAPType.string, "male").toABAP()
-);
+println(Constant("state", ABAPTypeKind.type, ABAPType.string, "male").toABAP());
 newLine();
 
 println(

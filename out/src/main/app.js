@@ -10,8 +10,23 @@ var Person = /** @class */ (function () {
     }
     return Person;
 }());
+(0, Println_1.println)((0, builder_1.PublicSection)()
+    .addMethod((0, builder_1.ClassMethod)("myClassMethod").build())
+    .addConstant((0, builder_1.Constant)("skin", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "mySkin"))
+    .build()
+    .toABAP());
+(0, NewLine_1.newLine)();
+(0, Println_1.println)((0, builder_1.PrivateSection)()
+    .addConstant((0, builder_1.Constant)("size", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "medium"))
+    .build()
+    .toABAP());
+(0, NewLine_1.newLine)();
+(0, Println_1.println)((0, builder_1.ProtectedSection)().build().toABAP());
+(0, NewLine_1.newLine)();
+(0, Println_1.println)((0, builder_1.PublicSection)().build().toABAP());
+(0, NewLine_1.newLine)();
 (0, Println_1.println)((0, builder_1.Class)("test")
-    .addConstants((0, builder_1.Constants)("male", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "MALE"))
+    .addConstant((0, builder_1.Constant)("male", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "MALE"))
     .addMethod((0, builder_1.ClassMethod)("to_string").build())
     .addMethod((0, builder_1.ClassMethod)("to_string2")
     .addImpParameter((0, builder_1.ImpParameter)("iv_firstname", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "Stacey"))
@@ -26,8 +41,8 @@ var Person = /** @class */ (function () {
 (0, Println_1.println)((0, builder_1.Interface)("if_test")
     .addInterface((0, builder_1.Interface)("if_child").build())
     .addInterface((0, builder_1.Interface)("if_child2").build())
-    .addConstants((0, builder_1.Constants)("male", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "MALE"))
-    .addConstants((0, builder_1.Constants)("female", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "FEMALE"))
+    .addConstant((0, builder_1.Constant)("male", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "MALE"))
+    .addConstant((0, builder_1.Constant)("female", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "FEMALE"))
     .addMethod((0, builder_1.Method)("to_string")
     .setRetParameter((0, builder_1.RetParameter)("rv_name", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string))
     .build())
@@ -35,7 +50,7 @@ var Person = /** @class */ (function () {
     .toABAP());
 (0, NewLine_1.newLine)();
 (0, Println_1.println)((0, builder_1.Interface)("if_test")
-    .addConstants((0, builder_1.Constants)("male", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "MALE"))
+    .addConstant((0, builder_1.Constant)("male", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "MALE"))
     .build()
     .toABAP());
 (0, NewLine_1.newLine)();
@@ -57,7 +72,7 @@ var Person = /** @class */ (function () {
 (0, NewLine_1.newLine)();
 (0, Println_1.println)((0, builder_1.Method)("to_string").build().toABAP());
 (0, NewLine_1.newLine)();
-(0, Println_1.println)((0, builder_1.Constants)("state", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "male").toABAP());
+(0, Println_1.println)((0, builder_1.Constant)("state", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "male").toABAP());
 (0, NewLine_1.newLine)();
 (0, Println_1.println)((0, builder_1.DataDefinition)("firstname", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.boolean, "abaP_TrUE").toABAP());
 (0, NewLine_1.newLine)();

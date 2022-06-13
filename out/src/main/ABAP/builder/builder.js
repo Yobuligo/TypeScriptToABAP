@@ -1,12 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Renderer = exports.Variable = exports.DataDefinition = exports.Constants = exports.RetParameter = exports.ChgParameter = exports.ExpParameter = exports.ImpParameter = exports.Method = exports.Interface = exports.ClassMethod = exports.Class = void 0;
+exports.Renderer = exports.Variable = exports.DataDefinition = exports.Constant = exports.RetParameter = exports.ChgParameter = exports.ExpParameter = exports.ImpParameter = exports.Method = exports.Interface = exports.PrivateSection = exports.ProtectedSection = exports.PublicSection = exports.ClassMethod = exports.Class = void 0;
 var ABAPRenderer_1 = require("../core/ABAPRenderer");
 var ABAPClassBuilder_1 = require("../object/class/class/ABAPClassBuilder");
 var ABAPClassMethodBuilder_1 = require("../object/class/classMethod/ABAPClassMethodBuilder");
+var ABAPPrivateSectionBuilder_1 = require("../object/class/section/private/ABAPPrivateSectionBuilder");
+var ABAPProtectedSectionBuilder_1 = require("../object/class/section/protected/ABAPProtectedSectionBuilder");
+var ABAPPublicSectionBuilder_1 = require("../object/class/section/public/ABAPPublicSectionBuilder");
 var ABAPInterfaceBuilder_1 = require("../object/interface/ABAPInterfaceBuilder");
 var ABAPMethodBuilder_1 = require("../object/method/ABAPMethodBuilder");
-var ABAPConstants_1 = require("../variables/constant/ABAPConstants");
+var ABAPConstant_1 = require("../variables/constant/ABAPConstant");
 var ABAPDataDefinition_1 = require("../variables/dataDefinition/ABAPDataDefinition");
 var ABAPParameter_1 = require("../variables/parameter/ABAPParameter");
 var ABAPVariable_1 = require("../variables/variable/ABAPVariable");
@@ -18,6 +21,18 @@ function ClassMethod(name) {
     return new ABAPClassMethodBuilder_1.ABAPClassMethodBuilder(name);
 }
 exports.ClassMethod = ClassMethod;
+function PublicSection() {
+    return new ABAPPublicSectionBuilder_1.ABAPPublicSectionBuilder();
+}
+exports.PublicSection = PublicSection;
+function ProtectedSection() {
+    return new ABAPProtectedSectionBuilder_1.ABAPProtectedSectionBuilder();
+}
+exports.ProtectedSection = ProtectedSection;
+function PrivateSection() {
+    return new ABAPPrivateSectionBuilder_1.ABAPPrivateSectionBuilder();
+}
+exports.PrivateSection = PrivateSection;
 function Interface(name) {
     return new ABAPInterfaceBuilder_1.ABAPInterfaceBuilder(name);
 }
@@ -42,10 +57,10 @@ function RetParameter(name, typeKind, type, value) {
     return new ABAPParameter_1.ABAPParameter(name, typeKind, type, value);
 }
 exports.RetParameter = RetParameter;
-function Constants(name, typeKind, type, value) {
-    return new ABAPConstants_1.ABAPConstants(name, typeKind, type, value);
+function Constant(name, typeKind, type, value) {
+    return new ABAPConstant_1.ABAPConstant(name, typeKind, type, value);
 }
-exports.Constants = Constants;
+exports.Constant = Constant;
 function DataDefinition(name, typeKind, type, value) {
     return new ABAPDataDefinition_1.ABAPDataDefinition(name, typeKind, type, value);
 }

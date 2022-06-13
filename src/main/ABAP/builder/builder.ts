@@ -1,12 +1,18 @@
 import { ABAPParamKind } from "../core/ABAPParamKind";
-import { ABAPRenderer } from "../core/ABAPRenderer";
+import { ABAPRenderer } from "../core/renderer/ABAPRenderer";
 import { ABAPType } from "../core/ABAPType";
 import { ABAPTypeKind } from "../core/ABAPTypeKind";
-import { IABAPRenderer } from "../core/IABAPRenderer";
+import { IABAPRenderer } from "../core/renderer/IABAPRenderer";
 import { ABAPClassBuilder } from "../object/class/class/ABAPClassBuilder";
 import { IABAPClassBuilder } from "../object/class/class/IABAPClassBuilder";
 import { ABAPClassMethodBuilder } from "../object/class/classMethod/ABAPClassMethodBuilder";
 import { IABAPClassMethodBuilder } from "../object/class/classMethod/IABAPClassMethodBuilder";
+import { ABAPPrivateSectionBuilder } from "../object/class/section/private/ABAPPrivateSectionBuilder";
+import { IABAPPrivateSectionBuilder } from "../object/class/section/private/IABAPPrivateSectionBuilder";
+import { ABAPProtectedSectionBuilder } from "../object/class/section/protected/ABAPProtectedSectionBuilder";
+import { IABAPProtectedSectionBuilder } from "../object/class/section/protected/IABAPProtectedSectionBuilder";
+import { ABAPPublicSectionBuilder } from "../object/class/section/public/ABAPPublicSectionBuilder";
+import { IABAPPublicSectionBuilder } from "../object/class/section/public/IABAPPublicSectionBuilder";
 import { ABAPInterfaceBuilder } from "../object/interface/ABAPInterfaceBuilder";
 import { IABAPInterfaceBuilder } from "../object/interface/IABAPInterfaceBuilder";
 import { ABAPMethodBuilder } from "../object/method/ABAPMethodBuilder";
@@ -27,6 +33,18 @@ export function Class(name: string): IABAPClassBuilder {
 
 export function ClassMethod(name: string): IABAPClassMethodBuilder {
   return new ABAPClassMethodBuilder(name);
+}
+
+export function PublicSection(): IABAPPublicSectionBuilder {
+  return new ABAPPublicSectionBuilder();
+}
+
+export function ProtectedSection(): IABAPProtectedSectionBuilder {
+  return new ABAPProtectedSectionBuilder();
+}
+
+export function PrivateSection(): IABAPPrivateSectionBuilder {
+  return new ABAPPrivateSectionBuilder();
 }
 
 export function Interface(name: string): IABAPInterfaceBuilder {

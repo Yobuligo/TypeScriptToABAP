@@ -16,7 +16,12 @@ export abstract class ABAPSection<T extends ABAPSectionType>
   ) {}
 
   toABAP(): string {
-    return `${this.renderHeader}\n${this.renderBody}`;
+    const body = this.renderBody();
+    if (body == "") {
+      return `${this.renderHeader()}`;
+    } else {
+      return `${this.renderHeader()}\n${body}`;
+    }
   }
 
   protected renderHeader(): string {

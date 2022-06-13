@@ -3,14 +3,20 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ABAPSection = void 0;
 var builder_1 = require("../../../builder/builder");
 var ABAPSection = /** @class */ (function () {
-    function ABAPSection(abapSectionType, constants, variables, methods) {
+    function ABAPSection(abapSectionType, abapConstants, abapVariables, abapMethods) {
         this.abapSectionType = abapSectionType;
-        this.constants = constants;
-        this.variables = variables;
-        this.methods = methods;
+        this.abapConstants = abapConstants;
+        this.abapVariables = abapVariables;
+        this.abapMethods = abapMethods;
     }
     ABAPSection.prototype.toABAP = function () {
-        return "".concat(this.renderHeader, "\n").concat(this.renderBody);
+        var body = this.renderBody();
+        if (body == "") {
+            return "".concat(this.renderHeader());
+        }
+        else {
+            return "".concat(this.renderHeader(), "\n").concat(body);
+        }
     };
     ABAPSection.prototype.renderHeader = function () {
         return "".concat(this.abapSectionType, " SECTION.");
@@ -19,13 +25,13 @@ var ABAPSection = /** @class */ (function () {
         return "".concat(this.renderConstants()).concat(this.renderVariables()).concat(this.renderMethods());
     };
     ABAPSection.prototype.renderConstants = function () {
-        return (0, builder_1.Renderer)().render(this.constants);
+        return (0, builder_1.Renderer)().render(this.abapConstants);
     };
     ABAPSection.prototype.renderVariables = function () {
-        return (0, builder_1.Renderer)().render(this.variables);
+        return (0, builder_1.Renderer)().render(this.abapVariables);
     };
     ABAPSection.prototype.renderMethods = function () {
-        return (0, builder_1.Renderer)().render(this.methods);
+        return (0, builder_1.Renderer)().render(this.abapMethods);
     };
     return ABAPSection;
 }());

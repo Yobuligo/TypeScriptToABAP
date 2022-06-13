@@ -1,5 +1,5 @@
 import { Renderer } from "../../builder/builder";
-import { ABAPRenderer } from "../../core/ABAPRenderer";
+import { ABAPRenderer } from "../../core/renderer/ABAPRenderer";
 import { IABAP } from "../../core/IABAP";
 import { IABAPConstant } from "../../variables/constant/IABAPConstant";
 import { IABAPInterface } from "../interface/IABAPInterface";

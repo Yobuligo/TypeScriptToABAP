@@ -12,8 +12,8 @@ var ABAPObjectBuilder = /** @class */ (function () {
         this.abapInterfaces.push(abapInterface);
         return this;
     };
-    ABAPObjectBuilder.prototype.addConstants = function (abapConstants) {
-        this.abapConstants.push(abapConstants);
+    ABAPObjectBuilder.prototype.addConstant = function (abapConstant) {
+        this.abapConstants.push(abapConstant);
         return this;
     };
     ABAPObjectBuilder.prototype.addMethod = function (abapMethod) {

@@ -9,7 +9,13 @@ export interface IABAPSectionBuilder<
   TSectionType extends ABAPSectionType,
   TABAPSection extends IABAPSection<TSectionType>
 > extends IABAPBuilder<TABAPSection> {
-  addConstant(abapConstant: IABAPConstant): IABAPBuilder<TABAPSection>;
-  addVariable(abapVariable: IABAPVariable): IABAPBuilder<TABAPSection>;
-  addMethod(abapMethod: IABAPClassMethod): IABAPBuilder<TABAPSection>;
+  addConstant(
+    abapConstant: IABAPConstant
+  ): IABAPSectionBuilder<TSectionType, TABAPSection>;
+  addVariable(
+    abapVariable: IABAPVariable
+  ): IABAPSectionBuilder<TSectionType, TABAPSection>;
+  addMethod(
+    abapMethod: IABAPClassMethod
+  ): IABAPSectionBuilder<TSectionType, TABAPSection>;
 }

@@ -21,6 +21,8 @@ export class ABAPPublicSection
   }
 
   protected renderBody(): string {
+    let code = this.renderInterfaces();
+    
     return `${this.renderInterfaces()}${this.renderConstants()}${this.renderVariables()}${this.renderMethods()}`;
   }
 
