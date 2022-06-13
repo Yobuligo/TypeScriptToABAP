@@ -1,7 +1,7 @@
 import {
   Class,
   ClassMethod,
-  Constants,
+  Constant,
   DataDefinition,
   ImpParameter,
   Interface,
@@ -18,7 +18,7 @@ class Person {}
 
 println(
   Class("test")
-    .addConstant(Constants("male", ABAPTypeKind.type, ABAPType.string, "MALE"))
+    .addConstant(Constant("male", ABAPTypeKind.type, ABAPType.string, "MALE"))
     .addMethod(ClassMethod("to_string").build())
     .addMethod(
       ClassMethod("to_string2")
@@ -42,9 +42,9 @@ println(
   Interface("if_test")
     .addInterface(Interface("if_child").build())
     .addInterface(Interface("if_child2").build())
-    .addConstant(Constants("male", ABAPTypeKind.type, ABAPType.string, "MALE"))
+    .addConstant(Constant("male", ABAPTypeKind.type, ABAPType.string, "MALE"))
     .addConstant(
-      Constants("female", ABAPTypeKind.type, ABAPType.string, "FEMALE")
+      Constant("female", ABAPTypeKind.type, ABAPType.string, "FEMALE")
     )
     .addMethod(
       Method("to_string")
@@ -60,7 +60,7 @@ newLine();
 
 println(
   Interface("if_test")
-    .addConstant(Constants("male", ABAPTypeKind.type, ABAPType.string, "MALE"))
+    .addConstant(Constant("male", ABAPTypeKind.type, ABAPType.string, "MALE"))
     .build()
     .toABAP()
 );
@@ -103,7 +103,7 @@ println(Method("to_string").build().toABAP());
 newLine();
 
 println(
-  Constants("state", ABAPTypeKind.type, ABAPType.string, "male").toABAP()
+  Constant("state", ABAPTypeKind.type, ABAPType.string, "male").toABAP()
 );
 newLine();
 

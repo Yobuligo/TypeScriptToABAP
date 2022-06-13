@@ -73,7 +73,7 @@ export function RetParameter(
   return new ABAPParameter(name, typeKind, type, value);
 }
 
-export function Constants(
+export function Constant(
   name: string,
   typeKind: ABAPTypeKind,
   type: ABAPType,
