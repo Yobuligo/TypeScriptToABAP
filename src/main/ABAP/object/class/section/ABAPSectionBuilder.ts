@@ -11,9 +11,9 @@ export abstract class ABAPSectionBuilder<
   TABAPSection extends IABAPSection<TSectionType>
 > implements IABAPSectionBuilder<TSectionType, TABAPSection>
 {
-  private abapConstants: IABAPConstant[] = [];
-  private abapVariables: IABAPVariable[] = [];
-  private abapMethods: IABAPClassMethod[] = [];
+  protected abapConstants: IABAPConstant[] = [];
+  protected abapVariables: IABAPVariable[] = [];
+  protected abapMethods: IABAPClassMethod[] = [];
 
   addConstant(abapConstants: IABAPConstant): IABAPBuilder<TABAPSection> {
     this.abapConstants.push(abapConstants);
