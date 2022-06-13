@@ -16,6 +16,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ABAPInterface = void 0;
+var builder_1 = require("../../builder/builder");
 var ABAPObject_1 = require("../object/ABAPObject");
 var ABAPInterface = /** @class */ (function (_super) {
     __extends(ABAPInterface, _super);
@@ -23,11 +24,13 @@ var ABAPInterface = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     ABAPInterface.prototype.toABAP = function () {
-        var code = _super.prototype.toABAP.call(this);
-        if (code != "") {
-            code += "\n";
-        }
-        return "INTERFACE ".concat(this.name, ".").concat(code, "\nENDINTERFACE.");
+        return (0, builder_1.Renderer)()
+            .append("INTERFACE ".concat(this.name, "."))
+            .append(this.renderInterfaces())
+            .appendABAPsAndLeadingBlank(this.abapConstants)
+            .appendABAPsAndLeadingBlank(this.abapMethods)
+            .appendAndLeadingBlank("ENDINTERFACE.")
+            .render();
     };
     return ABAPInterface;
 }(ABAPObject_1.ABAPObject));

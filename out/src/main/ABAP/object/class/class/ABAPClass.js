@@ -19,12 +19,12 @@ exports.ABAPClass = void 0;
 var ABAPObject_1 = require("../../object/ABAPObject");
 var ABAPClass = /** @class */ (function (_super) {
     __extends(ABAPClass, _super);
-    function ABAPClass(name, interfaces, constants, methods) {
-        var _this = _super.call(this, name, interfaces, constants, methods) || this;
+    function ABAPClass(name, abapInterfaces, abapConstants, abapMethods) {
+        var _this = _super.call(this, name, abapInterfaces, abapConstants, abapMethods) || this;
         _this.name = name;
-        _this.interfaces = interfaces;
-        _this.constants = constants;
-        _this.methods = methods;
+        _this.abapInterfaces = abapInterfaces;
+        _this.abapConstants = abapConstants;
+        _this.abapMethods = abapMethods;
         return _this;
     }
     ABAPClass.prototype.toABAPDefinition = function () {
@@ -45,13 +45,13 @@ var ABAPClass = /** @class */ (function (_super) {
         return "".concat(this.toABAPDefinition(), "\n\n").concat(this.toABAPImplementation());
     };
     ABAPClass.prototype.renderMethodBody = function () {
-        if (this.methods == undefined ||
-            this.methods == null ||
-            this.methods.length == 0) {
+        if (this.abapMethods == undefined ||
+            this.abapMethods == null ||
+            this.abapMethods.length == 0) {
             return "";
         }
         var code = "";
-        this.methods.forEach(function (method) {
+        this.abapMethods.forEach(function (method) {
             code += "\n\n  METHOD ".concat(method.name, ".\n  ENDMETHOD.");
         });
         return code;

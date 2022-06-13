@@ -21,6 +21,16 @@ class Person {}
 
 println(
   PublicSection()
+    .addInterface(Interface("if_test").build())
+    .addMethod(ClassMethod("myClassMethod").build())
+    .addConstant(Constant("skin", ABAPTypeKind.type, ABAPType.string, "mySkin"))
+    .build()
+    .toABAP()
+);
+newLine();
+
+println(
+  ProtectedSection()
     .addMethod(ClassMethod("myClassMethod").build())
     .addConstant(Constant("skin", ABAPTypeKind.type, ABAPType.string, "mySkin"))
     .build()

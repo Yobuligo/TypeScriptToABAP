@@ -16,31 +16,15 @@ export abstract class ABAPSection<T extends ABAPSectionType>
   ) {}
 
   toABAP(): string {
-    const body = this.renderBody();
-    if (body == "") {
-      return `${this.renderHeader()}`;
-    } else {
-      return `${this.renderHeader()}\n${body}`;
-    }
+    return Renderer()
+      .appendABAPs(this.abapConstants)
+      .appendABAPsAndLeadingBlank(this.abapVariables)
+      .appendABAPsAndLeadingBlank(this.abapMethods)
+      .insert(this.renderHeader())
+      .render();
   }
 
   protected renderHeader(): string {
     return `${this.abapSectionType} SECTION.`;
-  }
-
-  protected renderBody(): string {
-    return `${this.renderConstants()}${this.renderVariables()}${this.renderMethods()}`;
-  }
-
-  protected renderConstants(): string {
-    return Renderer().render(this.abapConstants);
-  }
-
-  protected renderVariables(): string {
-    return Renderer().render(this.abapVariables);
-  }
-
-  protected renderMethods(): string {
-    return Renderer().render(this.abapMethods);
   }
 }

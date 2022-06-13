@@ -20,13 +20,34 @@ export class ABAPPublicSection
     super(ABAPSectionType.public, abapConstants, abapVariables, abapMethods);
   }
 
-  protected renderBody(): string {
-    let code = this.renderInterfaces();
-    
-    return `${this.renderInterfaces()}${this.renderConstants()}${this.renderVariables()}${this.renderMethods()}`;
+  toABAP(): string {
+    return Renderer()
+      .append(this.renderInterfaceHeader())
+      .appendABAPsAndLeadingBlank(this.abapConstants)
+      .appendABAPsAndLeadingBlank(this.abapVariables)
+      .appendABAPsAndLeadingBlank(this.abapMethods)
+      .insert(this.renderHeader())
+      .render();
   }
 
-  private renderInterfaces() {
-    return Renderer().render(this.abapInterfaces);
+  private renderInterfaceHeader(): string {
+    if (
+      this.abapInterfaces == undefined ||
+      this.abapInterfaces == null ||
+      this.abapInterfaces.length == 0
+    ) {
+      return "";
+    }
+
+    let code = "";
+    this.abapInterfaces.forEach((abapInterface) => {
+      if (code == "") {
+        code = `  INTERFACES ${abapInterface.name}.`;
+      } else {
+        code = `\n  INTERFACES ${abapInterface.name}.`;
+      }
+    });
+
+    return code;
   }
 }

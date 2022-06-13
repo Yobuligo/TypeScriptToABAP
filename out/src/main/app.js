@@ -11,6 +11,13 @@ var Person = /** @class */ (function () {
     return Person;
 }());
 (0, Println_1.println)((0, builder_1.PublicSection)()
+    .addInterface((0, builder_1.Interface)("if_test").build())
+    .addMethod((0, builder_1.ClassMethod)("myClassMethod").build())
+    .addConstant((0, builder_1.Constant)("skin", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "mySkin"))
+    .build()
+    .toABAP());
+(0, NewLine_1.newLine)();
+(0, Println_1.println)((0, builder_1.ProtectedSection)()
     .addMethod((0, builder_1.ClassMethod)("myClassMethod").build())
     .addConstant((0, builder_1.Constant)("skin", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "mySkin"))
     .build()

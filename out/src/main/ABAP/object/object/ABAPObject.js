@@ -3,38 +3,35 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ABAPObject = void 0;
 var builder_1 = require("../../builder/builder");
 var ABAPObject = /** @class */ (function () {
-    function ABAPObject(name, interfaces, constants, methods) {
+    function ABAPObject(name, abapInterfaces, abapConstants, abapMethods) {
         this.name = name;
-        this.interfaces = interfaces;
-        this.constants = constants;
-        this.methods = methods;
+        this.abapInterfaces = abapInterfaces;
+        this.abapConstants = abapConstants;
+        this.abapMethods = abapMethods;
     }
     ABAPObject.prototype.toABAP = function () {
-        return "".concat(this.renderInterfaces()).concat(this.renderConstants()).concat(this.renderMethods());
+        return (0, builder_1.Renderer)()
+            .append(this.renderInterfaces())
+            .appendABAPs(this.abapConstants)
+            .appendABAPs(this.abapMethods)
+            .render();
     };
     ABAPObject.prototype.renderInterfaces = function () {
-        if (this.interfaces == undefined || this.interfaces.length == 0) {
+        if (this.abapInterfaces == undefined ||
+            this.abapInterfaces == null ||
+            this.abapInterfaces.length == 0) {
             return "";
         }
-        var code = "\n";
-        this.interfaces.forEach(function (intf) {
+        var code = "";
+        this.abapInterfaces.forEach(function (abapInterface) {
             if (code == "") {
-                code = "  INTERFACES ".concat(intf.name, ".");
+                code = "  INTERFACES ".concat(abapInterface.name, ".");
             }
             else {
-                code += "\n  INTERFACES ".concat(intf.name, ".");
+                code += "\n  INTERFACES ".concat(abapInterface.name, ".");
             }
         });
         return code;
-    };
-    ABAPObject.prototype.renderConstants = function () {
-        return this.renderABAPs(this.constants);
-    };
-    ABAPObject.prototype.renderMethods = function () {
-        return this.renderABAPs(this.methods);
-    };
-    ABAPObject.prototype.renderABAPs = function (abaps) {
-        return (0, builder_1.Renderer)().render(abaps);
     };
     return ABAPObject;
 }());

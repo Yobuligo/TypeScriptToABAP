@@ -26,11 +26,31 @@ var ABAPPublicSection = /** @class */ (function (_super) {
         _this.abapInterfaces = abapInterfaces;
         return _this;
     }
-    ABAPPublicSection.prototype.renderBody = function () {
-        return "".concat(this.renderInterfaces()).concat(this.renderConstants()).concat(this.renderVariables()).concat(this.renderMethods());
+    ABAPPublicSection.prototype.toABAP = function () {
+        return (0, builder_1.Renderer)()
+            .append(this.renderInterfaceHeader())
+            .appendABAPsAndLeadingBlank(this.abapConstants)
+            .appendABAPsAndLeadingBlank(this.abapVariables)
+            .appendABAPsAndLeadingBlank(this.abapMethods)
+            .insert(this.renderHeader())
+            .render();
     };
-    ABAPPublicSection.prototype.renderInterfaces = function () {
-        return (0, builder_1.Renderer)().render(this.abapInterfaces);
+    ABAPPublicSection.prototype.renderInterfaceHeader = function () {
+        if (this.abapInterfaces == undefined ||
+            this.abapInterfaces == null ||
+            this.abapInterfaces.length == 0) {
+            return "";
+        }
+        var code = "";
+        this.abapInterfaces.forEach(function (abapInterface) {
+            if (code == "") {
+                code = "  INTERFACES ".concat(abapInterface.name, ".");
+            }
+            else {
+                code = "\n  INTERFACES ".concat(abapInterface.name, ".");
+            }
+        });
+        return code;
     };
     return ABAPPublicSection;
 }(ABAPSection_1.ABAPSection));

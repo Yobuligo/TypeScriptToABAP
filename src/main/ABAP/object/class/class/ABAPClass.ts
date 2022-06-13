@@ -7,11 +7,11 @@ import { IABAPClass } from "./IABAPClass";
 export class ABAPClass extends ABAPObject implements IABAPClass {
   constructor(
     readonly name: string,
-    readonly interfaces?: IABAPInterface[],
-    readonly constants?: IABAPConstant[],
-    readonly methods?: IABAPClassMethod[]
+    readonly abapInterfaces?: IABAPInterface[],
+    readonly abapConstants?: IABAPConstant[],
+    readonly abapMethods?: IABAPClassMethod[]
   ) {
-    super(name, interfaces, constants, methods);
+    super(name, abapInterfaces, abapConstants, abapMethods);
   }
 
   toABAPDefinition(): string {
@@ -36,15 +36,15 @@ export class ABAPClass extends ABAPObject implements IABAPClass {
 
   private renderMethodBody(): string {
     if (
-      this.methods == undefined ||
-      this.methods == null ||
-      this.methods.length == 0
+      this.abapMethods == undefined ||
+      this.abapMethods == null ||
+      this.abapMethods.length == 0
     ) {
       return "";
     }
 
     let code = "";
-    this.methods.forEach((method) => {
+    this.abapMethods.forEach((method) => {
       code += `\n\n  METHOD ${method.name}.\n  ENDMETHOD.`;
     });
     return code;

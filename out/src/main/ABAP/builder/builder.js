@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Renderer = exports.Variable = exports.DataDefinition = exports.Constant = exports.RetParameter = exports.ChgParameter = exports.ExpParameter = exports.ImpParameter = exports.Method = exports.Interface = exports.PrivateSection = exports.ProtectedSection = exports.PublicSection = exports.ClassMethod = exports.Class = void 0;
-var ABAPRenderer_1 = require("../core/ABAPRenderer");
+var ABAPRenderer_1 = require("../core/renderer/ABAPRenderer");
 var ABAPClassBuilder_1 = require("../object/class/class/ABAPClassBuilder");
 var ABAPClassMethodBuilder_1 = require("../object/class/classMethod/ABAPClassMethodBuilder");
 var ABAPPrivateSectionBuilder_1 = require("../object/class/section/private/ABAPPrivateSectionBuilder");
