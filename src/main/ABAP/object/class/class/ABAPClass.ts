@@ -1,4 +1,4 @@
-import { IABAPConstants } from "../../../variables/constant/IABAPConstants";
+import { IABAPConstant } from "../../../variables/constant/IABAPConstant";
 import { IABAPInterface } from "../../interface/IABAPInterface";
 import { ABAPObject } from "../../object/ABAPObject";
 import { IABAPClassMethod } from "../classMethod/IABAPClassMethod";
@@ -8,7 +8,7 @@ export class ABAPClass extends ABAPObject implements IABAPClass {
   constructor(
     readonly name: string,
     readonly interfaces?: IABAPInterface[],
-    readonly constants?: IABAPConstants[],
+    readonly constants?: IABAPConstant[],
     readonly methods?: IABAPClassMethod[]
   ) {
     super(name, interfaces, constants, methods);

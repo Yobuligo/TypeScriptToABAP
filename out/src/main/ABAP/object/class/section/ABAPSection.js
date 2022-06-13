@@ -10,6 +10,12 @@ var ABAPSection = /** @class */ (function () {
         this.methods = methods;
     }
     ABAPSection.prototype.toABAP = function () {
+        return "".concat(this.renderHeader, "\n").concat(this.renderBody);
+    };
+    ABAPSection.prototype.renderHeader = function () {
+        return "".concat(this.abapSectionType, " SECTION.");
+    };
+    ABAPSection.prototype.renderBody = function () {
         return "".concat(this.renderConstants()).concat(this.renderVariables()).concat(this.renderMethods());
     };
     ABAPSection.prototype.renderConstants = function () {

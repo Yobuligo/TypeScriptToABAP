@@ -1,9 +1,9 @@
 import { ABAPType } from "../../core/ABAPType";
 import { ABAPTypeKind } from "../../core/ABAPTypeKind";
 import { ABAPVariable } from "../variable/ABAPVariable";
-import { IABAPConstants } from "./IABAPConstants";
+import { IABAPConstant } from "./IABAPConstant";
 
-export class ABAPConstants extends ABAPVariable implements IABAPConstants {
+export class ABAPConstant extends ABAPVariable implements IABAPConstant {
   constructor(
     name: string,
     typeKind: ABAPTypeKind,

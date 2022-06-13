@@ -12,8 +12,8 @@ import { IABAPInterfaceBuilder } from "../object/interface/IABAPInterfaceBuilder
 import { ABAPMethodBuilder } from "../object/method/ABAPMethodBuilder";
 import { IABAPMethod } from "../object/method/IABAPMethod";
 import { IABAPMethodBuilder } from "../object/method/IABAPMethodBuilder";
-import { ABAPConstants } from "../variables/constant/ABAPConstants";
-import { IABAPConstants } from "../variables/constant/IABAPConstants";
+import { ABAPConstant } from "../variables/constant/ABAPConstant";
+import { IABAPConstant } from "../variables/constant/IABAPConstant";
 import { ABAPDataDefinition } from "../variables/dataDefinition/ABAPDataDefinition";
 import { IABAPDataDefinition } from "../variables/dataDefinition/IABAPDataDefinition";
 import { ABAPParameter } from "../variables/parameter/ABAPParameter";
@@ -78,8 +78,8 @@ export function Constants(
   typeKind: ABAPTypeKind,
   type: ABAPType,
   value: string
-): IABAPConstants {
-  return new ABAPConstants(name, typeKind, type, value);
+): IABAPConstant {
+  return new ABAPConstant(name, typeKind, type, value);
 }
 
 export function DataDefinition(

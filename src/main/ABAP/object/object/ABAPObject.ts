@@ -1,7 +1,7 @@
 import { Renderer } from "../../builder/builder";
 import { ABAPRenderer } from "../../core/ABAPRenderer";
 import { IABAP } from "../../core/IABAP";
-import { IABAPConstants } from "../../variables/constant/IABAPConstants";
+import { IABAPConstant } from "../../variables/constant/IABAPConstant";
 import { IABAPInterface } from "../interface/IABAPInterface";
 import { IABAPMethod } from "../method/IABAPMethod";
 import { IABAPObject } from "./IABAPObject";
@@ -10,7 +10,7 @@ export class ABAPObject implements IABAPObject {
   constructor(
     readonly name: string,
     readonly interfaces?: IABAPInterface[],
-    readonly constants?: IABAPConstants[],
+    readonly constants?: IABAPConstant[],
     readonly methods?: IABAPMethod[]
   ) {}
 

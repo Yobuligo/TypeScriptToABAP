@@ -18,7 +18,7 @@ class Person {}
 
 println(
   Class("test")
-    .addConstants(Constants("male", ABAPTypeKind.type, ABAPType.string, "MALE"))
+    .addConstant(Constants("male", ABAPTypeKind.type, ABAPType.string, "MALE"))
     .addMethod(ClassMethod("to_string").build())
     .addMethod(
       ClassMethod("to_string2")
@@ -42,8 +42,8 @@ println(
   Interface("if_test")
     .addInterface(Interface("if_child").build())
     .addInterface(Interface("if_child2").build())
-    .addConstants(Constants("male", ABAPTypeKind.type, ABAPType.string, "MALE"))
-    .addConstants(
+    .addConstant(Constants("male", ABAPTypeKind.type, ABAPType.string, "MALE"))
+    .addConstant(
       Constants("female", ABAPTypeKind.type, ABAPType.string, "FEMALE")
     )
     .addMethod(
@@ -60,7 +60,7 @@ newLine();
 
 println(
   Interface("if_test")
-    .addConstants(Constants("male", ABAPTypeKind.type, ABAPType.string, "MALE"))
+    .addConstant(Constants("male", ABAPTypeKind.type, ABAPType.string, "MALE"))
     .build()
     .toABAP()
 );

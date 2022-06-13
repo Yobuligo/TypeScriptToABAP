@@ -1,5 +1,5 @@
 import { Renderer } from "../../../builder/builder";
-import { IABAPConstants } from "../../../variables/constant/IABAPConstants";
+import { IABAPConstant } from "../../../variables/constant/IABAPConstant";
 import { IABAPVariable } from "../../../variables/variable/IABAPVariable";
 import { IABAPMethod } from "../../method/IABAPMethod";
 import { ABAPSectionType } from "./ABAPSectionType";
@@ -10,24 +10,32 @@ export abstract class ABAPSection<T extends ABAPSectionType>
 {
   constructor(
     readonly abapSectionType: T,
-    readonly constants?: IABAPConstants[],
-    readonly variables?: IABAPVariable[],
-    readonly methods?: IABAPMethod[]
+    readonly abapConstants?: IABAPConstant[],
+    readonly abapVariables?: IABAPVariable[],
+    readonly abapMethods?: IABAPMethod[]
   ) {}
 
   toABAP(): string {
+    return `${this.renderHeader}\n${this.renderBody}`;
+  }
+
+  protected renderHeader(): string {
+    return `${this.abapSectionType} SECTION.`;
+  }
+
+  protected renderBody(): string {
     return `${this.renderConstants()}${this.renderVariables()}${this.renderMethods()}`;
   }
 
-  private renderConstants(): string {
-    return Renderer().render(this.constants);
+  protected renderConstants(): string {
+    return Renderer().render(this.abapConstants);
   }
 
-  private renderVariables(): string {
-    return Renderer().render(this.variables);
+  protected renderVariables(): string {
+    return Renderer().render(this.abapVariables);
   }
 
-  private renderMethods(): string {
-    return Renderer().render(this.methods);
+  protected renderMethods(): string {
+    return Renderer().render(this.abapMethods);
   }
 }

@@ -4,5 +4,5 @@ import { IABAPSection } from "./IABAPSection";
 
 export interface IABAPPublicSection
   extends IABAPSection<ABAPSectionType.public> {
-  readonly interface?: IABAPInterface[];
+  readonly abapInterface?: IABAPInterface[];
 }

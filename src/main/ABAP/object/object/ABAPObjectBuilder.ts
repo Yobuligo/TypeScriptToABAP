@@ -1,4 +1,4 @@
-import { IABAPConstants } from "../../variables/constant/IABAPConstants";
+import { IABAPConstant } from "../../variables/constant/IABAPConstant";
 import { IABAPInterface } from "../interface/IABAPInterface";
 import { IABAPMethod } from "../method/IABAPMethod";
 import { IABAPObject } from "./IABAPObject";
@@ -8,7 +8,7 @@ export abstract class ABAPObjectBuilder<T extends IABAPObject>
   implements IABAPObjectBuilder<T>
 {
   protected abapInterfaces: IABAPInterface[] = [];
-  protected abapConstants: IABAPConstants[] = [];
+  protected abapConstants: IABAPConstant[] = [];
   protected abapMethods: IABAPMethod[] = [];
 
   constructor(protected readonly name: string) {}
@@ -18,8 +18,8 @@ export abstract class ABAPObjectBuilder<T extends IABAPObject>
     return this;
   }
 
-  addConstants(abapConstants: IABAPConstants): IABAPObjectBuilder<T> {
-    this.abapConstants.push(abapConstants);
+  addConstant(abapConstant: IABAPConstant): IABAPObjectBuilder<T> {
+    this.abapConstants.push(abapConstant);
     return this;
   }
 

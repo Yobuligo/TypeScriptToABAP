@@ -1,4 +1,4 @@
-import { IABAPConstants } from "../../../variables/constant/IABAPConstants";
+import { IABAPConstant } from "../../../variables/constant/IABAPConstant";
 import { IABAPInterface } from "../../interface/IABAPInterface";
 import { IABAPClassMethod } from "../classMethod/IABAPClassMethod";
 import { ABAPClass } from "./ABAPClass";
@@ -7,7 +7,7 @@ import { IABAPClassBuilder } from "./IABAPClassBuilder";
 
 export class ABAPClassBuilder implements IABAPClassBuilder {
   private abapInterfaces: IABAPInterface[] = [];
-  private abapConstants: IABAPConstants[] = [];
+  private abapConstants: IABAPConstant[] = [];
   private abapClassMethods: IABAPClassMethod[] = [];
 
   constructor(readonly name: string) {}
@@ -16,8 +16,8 @@ export class ABAPClassBuilder implements IABAPClassBuilder {
     this.abapInterfaces.push(abapInterface);
     return this;
   }
-  addConstants(abapConstants: IABAPConstants): IABAPClassBuilder {
-    this.abapConstants.push(abapConstants);
+  addConstant(abapConstant: IABAPConstant): IABAPClassBuilder {
+    this.abapConstants.push(abapConstant);
     return this;
   }
   addMethod(abapClassMethod: IABAPClassMethod): IABAPClassBuilder {

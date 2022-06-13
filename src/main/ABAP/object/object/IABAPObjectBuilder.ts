@@ -1,5 +1,5 @@
 import { IABAPBuilder } from "../../core/IABAPBuilder";
-import { IABAPConstants } from "../../variables/constant/IABAPConstants";
+import { IABAPConstant } from "../../variables/constant/IABAPConstant";
 import { IABAPInterface } from "../interface/IABAPInterface";
 import { IABAPMethod } from "../method/IABAPMethod";
 import { IABAPObject } from "./IABAPObject";
@@ -7,6 +7,6 @@ import { IABAPObject } from "./IABAPObject";
 export interface IABAPObjectBuilder<T extends IABAPObject>
   extends IABAPBuilder<T> {
   addInterface(abapInterface: IABAPInterface): IABAPObjectBuilder<T>;
-  addConstants(abapConstants: IABAPConstants): IABAPObjectBuilder<T>;
+  addConstant(abapConstant: IABAPConstant): IABAPObjectBuilder<T>;
   addMethod(abapMethod: IABAPMethod): IABAPObjectBuilder<T>;
 }
