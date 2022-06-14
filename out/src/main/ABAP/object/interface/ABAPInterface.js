@@ -26,7 +26,7 @@ var ABAPInterface = /** @class */ (function (_super) {
     ABAPInterface.prototype.toABAP = function () {
         return (0, builder_1.Renderer)()
             .append("INTERFACE ".concat(this.name, "."))
-            .append(this.renderInterfaces())
+            .appendAndLeadingBlank(this.renderInterfaces())
             .appendABAPsAndLeadingBlank(this.abapConstants)
             .appendABAPsAndLeadingBlank(this.abapMethods)
             .appendAndLeadingBlank("ENDINTERFACE.")

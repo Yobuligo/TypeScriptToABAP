@@ -4,6 +4,7 @@ export interface IABAPRenderer {
   append(code: string): IABAPRenderer;
   appendAndLeadingBlank(code: string): IABAPRenderer;
   appendABAP(abap?: IABAP): IABAPRenderer;
+  appendABAPAndLeadingBlank(abap?: IABAP): IABAPRenderer;
   appendABAPs(abaps?: IABAP[]): IABAPRenderer;
   appendABAPsAndLeadingBlank(abaps?: IABAP[]): IABAPRenderer;
   insert(code: string): IABAPRenderer;

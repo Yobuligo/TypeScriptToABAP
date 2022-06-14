@@ -1,6 +1,6 @@
 import { IABAPConstant } from "../../../../variables/constant/IABAPConstant";
 import { IABAPVariable } from "../../../../variables/variable/IABAPVariable";
-import { IABAPMethod } from "../../../method/IABAPMethod";
+import { IABAPClassMethod } from "../../classMethod/IABAPClassMethod";
 import { ABAPSection } from "../ABAPSection";
 import { ABAPSectionType } from "../ABAPSectionType";
 import { IABAPPrivateSection } from "./IABAPPrivateSection";
@@ -12,7 +12,7 @@ export class ABAPPrivateSection
   constructor(
     abapConstants?: IABAPConstant[],
     abapVariables?: IABAPVariable[],
-    abapMethods?: IABAPMethod[]
+    abapMethods?: IABAPClassMethod[]
   ) {
     super(ABAPSectionType.private, abapConstants, abapVariables, abapMethods);
   }

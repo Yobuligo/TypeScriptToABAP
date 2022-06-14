@@ -36,6 +36,13 @@ var ABAPRenderer = /** @class */ (function () {
         this.append(abap.toABAP());
         return this;
     };
+    ABAPRenderer.prototype.appendABAPAndLeadingBlank = function (abap) {
+        if (abap == undefined || abap == null) {
+            return this;
+        }
+        this.appendAndLeadingBlank(abap.toABAP());
+        return this;
+    };
     ABAPRenderer.prototype.appendABAPs = function (abaps) {
         var codeBlock = this.renderABAPs(abaps);
         if (codeBlock == "") {

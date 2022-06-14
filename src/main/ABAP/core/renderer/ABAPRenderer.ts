@@ -38,6 +38,14 @@ export class ABAPRenderer implements IABAPRenderer {
     return this;
   }
 
+  appendABAPAndLeadingBlank(abap?: IABAP): IABAPRenderer {
+    if (abap == undefined || abap == null) {
+      return this;
+    }
+    this.appendAndLeadingBlank(abap.toABAP());
+    return this;
+  }
+
   appendABAPs(abaps?: IABAP[]): IABAPRenderer {
     let codeBlock = this.renderABAPs(abaps);
     if (codeBlock == "") {

@@ -1,36 +1,42 @@
-import { IABAPConstant } from "../../../variables/constant/IABAPConstant";
-import { IABAPInterface } from "../../interface/IABAPInterface";
-import { IABAPClassMethod } from "../classMethod/IABAPClassMethod";
+import { IABAPPrivateSection } from "../section/private/IABAPPrivateSection";
+import { IABAPProtectedSection } from "../section/protected/IABAPProtectedSection";
+import { IABAPPublicSection } from "../section/public/IABAPPublicSection";
 import { ABAPClass } from "./ABAPClass";
 import { IABAPClass } from "./IABAPClass";
 import { IABAPClassBuilder } from "./IABAPClassBuilder";
 
 export class ABAPClassBuilder implements IABAPClassBuilder {
-  private abapInterfaces: IABAPInterface[] = [];
-  private abapConstants: IABAPConstant[] = [];
-  private abapClassMethods: IABAPClassMethod[] = [];
+  private abapPublicSection: IABAPPublicSection;
+  private abapProtectedSection: IABAPProtectedSection;
+  private abapPrivateSection: IABAPPrivateSection;
 
   constructor(readonly name: string) {}
 
-  addInterface(abapInterface: IABAPInterface): IABAPClassBuilder {
-    this.abapInterfaces.push(abapInterface);
+  setPublicSection(abapPublicSection: IABAPPublicSection): IABAPClassBuilder {
+    this.abapPublicSection = abapPublicSection;
     return this;
   }
-  addConstant(abapConstant: IABAPConstant): IABAPClassBuilder {
-    this.abapConstants.push(abapConstant);
+
+  setProtectedSection(
+    abapProtectedSection: IABAPProtectedSection
+  ): IABAPClassBuilder {
+    this.abapProtectedSection = abapProtectedSection;
     return this;
   }
-  addMethod(abapClassMethod: IABAPClassMethod): IABAPClassBuilder {
-    this.abapClassMethods.push(abapClassMethod);
+
+  setPrivateSection(
+    abapPrivateSection: IABAPPrivateSection
+  ): IABAPClassBuilder {
+    this.abapPrivateSection = abapPrivateSection;
     return this;
   }
 
   build(): IABAPClass {
     return new ABAPClass(
       this.name,
-      this.abapInterfaces,
-      this.abapConstants,
-      this.abapClassMethods
+      this.abapPublicSection,
+      this.abapProtectedSection,
+      this.abapPrivateSection
     );
   }
 }

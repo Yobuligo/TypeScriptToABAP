@@ -1,62 +1,66 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ABAPClass = void 0;
-var ABAPObject_1 = require("../../object/ABAPObject");
-var ABAPClass = /** @class */ (function (_super) {
-    __extends(ABAPClass, _super);
-    function ABAPClass(name, abapInterfaces, abapConstants, abapMethods) {
-        var _this = _super.call(this, name, abapInterfaces, abapConstants, abapMethods) || this;
-        _this.name = name;
-        _this.abapInterfaces = abapInterfaces;
-        _this.abapConstants = abapConstants;
-        _this.abapMethods = abapMethods;
-        return _this;
+var builder_1 = require("../../../builder/builder");
+var ABAPClass = /** @class */ (function () {
+    function ABAPClass(name, abapPublicSection, abapProtectedSection, abapPrivateSection) {
+        this.name = name;
+        this.abapPublicSection = abapPublicSection;
+        this.abapProtectedSection = abapProtectedSection;
+        this.abapPrivateSection = abapPrivateSection;
     }
     ABAPClass.prototype.toABAPDefinition = function () {
-        var code = _super.prototype.toABAP.call(this);
-        if (code != "") {
-            code += "\n";
-        }
-        return "CLASS ".concat(this.name, " DEFINITION.").concat(code, "\nENDCLASS.");
+        return (0, builder_1.Renderer)()
+            .append("CLASS ".concat(this.name, " DEFINITION."))
+            .appendABAPAndLeadingBlank(this.abapPublicSection)
+            .appendABAPAndLeadingBlank(this.abapProtectedSection)
+            .appendABAPAndLeadingBlank(this.abapPrivateSection)
+            .appendAndLeadingBlank("ENDCLASS.")
+            .render();
     };
     ABAPClass.prototype.toABAPImplementation = function () {
-        var code = this.renderMethodBody();
-        if (code != "") {
-            code += "\n";
-        }
-        return "CLASS ".concat(this.name, " IMPLEMENTATION.").concat(code, "\nENDCLASS.");
+        return (0, builder_1.Renderer)()
+            .append("CLASS ".concat(this.name, " IMPLEMENTATION."))
+            .appendAndLeadingBlank(this.renderMethodBody(this.collectABAPMethods()))
+            .appendAndLeadingBlank("ENDCLASS.")
+            .render();
     };
     ABAPClass.prototype.toABAP = function () {
         return "".concat(this.toABAPDefinition(), "\n\n").concat(this.toABAPImplementation());
     };
-    ABAPClass.prototype.renderMethodBody = function () {
-        if (this.abapMethods == undefined ||
-            this.abapMethods == null ||
-            this.abapMethods.length == 0) {
+    ABAPClass.prototype.renderMethodBody = function (abapMethods) {
+        if (abapMethods == undefined ||
+            abapMethods == null ||
+            abapMethods.length == 0) {
             return "";
         }
         var code = "";
-        this.abapMethods.forEach(function (method) {
-            code += "\n\n  METHOD ".concat(method.name, ".\n  ENDMETHOD.");
+        abapMethods.forEach(function (method) {
+            if (code == "") {
+                code = "  METHOD ".concat(method.name, ".\n  ENDMETHOD.");
+            }
+            else {
+                code += "\n\n  METHOD ".concat(method.name, ".\n  ENDMETHOD.");
+            }
         });
         return code;
     };
+    ABAPClass.prototype.collectABAPMethods = function () {
+        var abapMethods = [];
+        if (this.abapPublicSection != undefined && this.abapPublicSection != null) {
+            abapMethods.push.apply(abapMethods, this.abapPublicSection.abapMethods);
+        }
+        if (this.abapProtectedSection != undefined &&
+            this.abapProtectedSection != null) {
+            abapMethods.push.apply(abapMethods, this.abapProtectedSection.abapMethods);
+        }
+        if (this.abapPrivateSection != undefined &&
+            this.abapPrivateSection != null) {
+            abapMethods.push.apply(abapMethods, this.abapPrivateSection.abapMethods);
+        }
+        return abapMethods;
+    };
     return ABAPClass;
-}(ABAPObject_1.ABAPObject));
+}());
 exports.ABAPClass = ABAPClass;
 //# sourceMappingURL=ABAPClass.js.map

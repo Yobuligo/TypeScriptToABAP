@@ -1,52 +1,81 @@
-import { IABAPConstant } from "../../../variables/constant/IABAPConstant";
-import { IABAPInterface } from "../../interface/IABAPInterface";
-import { ABAPObject } from "../../object/ABAPObject";
+import { Renderer } from "../../../builder/builder";
+import { IABAPMethod } from "../../method/IABAPMethod";
 import { IABAPClassMethod } from "../classMethod/IABAPClassMethod";
+import { IABAPPrivateSection } from "../section/private/IABAPPrivateSection";
+import { IABAPProtectedSection } from "../section/protected/IABAPProtectedSection";
+import { IABAPPublicSection } from "../section/public/IABAPPublicSection";
 import { IABAPClass } from "./IABAPClass";
 
-export class ABAPClass extends ABAPObject implements IABAPClass {
+export class ABAPClass implements IABAPClass {
   constructor(
     readonly name: string,
-    readonly abapInterfaces?: IABAPInterface[],
-    readonly abapConstants?: IABAPConstant[],
-    readonly abapMethods?: IABAPClassMethod[]
-  ) {
-    super(name, abapInterfaces, abapConstants, abapMethods);
-  }
+    readonly abapPublicSection?: IABAPPublicSection,
+    readonly abapProtectedSection?: IABAPProtectedSection,
+    readonly abapPrivateSection?: IABAPPrivateSection
+  ) {}
 
   toABAPDefinition(): string {
-    let code = super.toABAP();
-    if (code != "") {
-      code += `\n`;
-    }
-    return `CLASS ${this.name} DEFINITION.${code}\nENDCLASS.`;
+    return Renderer()
+      .append(`CLASS ${this.name} DEFINITION.`)
+      .appendABAPAndLeadingBlank(this.abapPublicSection)
+      .appendABAPAndLeadingBlank(this.abapProtectedSection)
+      .appendABAPAndLeadingBlank(this.abapPrivateSection)
+      .appendAndLeadingBlank(`ENDCLASS.`)
+      .render();
   }
 
   toABAPImplementation(): string {
-    let code = this.renderMethodBody();
-    if (code != "") {
-      code += `\n`;
-    }
-    return `CLASS ${this.name} IMPLEMENTATION.${code}\nENDCLASS.`;
+    return Renderer()
+      .append(`CLASS ${this.name} IMPLEMENTATION.`)
+      .appendAndLeadingBlank(this.renderMethodBody(this.collectABAPMethods()))
+      .appendAndLeadingBlank(`ENDCLASS.`)
+      .render();
   }
 
   toABAP(): string {
     return `${this.toABAPDefinition()}\n\n${this.toABAPImplementation()}`;
   }
 
-  private renderMethodBody(): string {
+  private renderMethodBody(abapMethods?: IABAPMethod[]): string {
     if (
-      this.abapMethods == undefined ||
-      this.abapMethods == null ||
-      this.abapMethods.length == 0
+      abapMethods == undefined ||
+      abapMethods == null ||
+      abapMethods.length == 0
     ) {
       return "";
     }
 
     let code = "";
-    this.abapMethods.forEach((method) => {
-      code += `\n\n  METHOD ${method.name}.\n  ENDMETHOD.`;
+    abapMethods.forEach((method) => {
+      if (code == "") {
+        code = `  METHOD ${method.name}.\n  ENDMETHOD.`;
+      } else {
+        code += `\n\n  METHOD ${method.name}.\n  ENDMETHOD.`;
+      }
     });
     return code;
+  }
+
+  private collectABAPMethods(): IABAPClassMethod[] {
+    let abapMethods: IABAPClassMethod[] = [];
+    if (this.abapPublicSection != undefined && this.abapPublicSection != null) {
+      abapMethods.push(...this.abapPublicSection.abapMethods);
+    }
+
+    if (
+      this.abapProtectedSection != undefined &&
+      this.abapProtectedSection != null
+    ) {
+      abapMethods.push(...this.abapProtectedSection.abapMethods);
+    }
+
+    if (
+      this.abapPrivateSection != undefined &&
+      this.abapPrivateSection != null
+    ) {
+      abapMethods.push(...this.abapPrivateSection.abapMethods);
+    }
+
+    return abapMethods;
   }
 }

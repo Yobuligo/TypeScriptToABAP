@@ -1,11 +1,13 @@
 import { IABAPBuilder } from "../../../core/IABAPBuilder";
-import { IABAPConstant } from "../../../variables/constant/IABAPConstant";
-import { IABAPInterface } from "../../interface/IABAPInterface";
-import { IABAPClassMethod } from "../classMethod/IABAPClassMethod";
+import { IABAPPrivateSection } from "../section/private/IABAPPrivateSection";
+import { IABAPProtectedSection } from "../section/protected/IABAPProtectedSection";
+import { IABAPPublicSection } from "../section/public/IABAPPublicSection";
 import { IABAPClass } from "./IABAPClass";
 
 export interface IABAPClassBuilder extends IABAPBuilder<IABAPClass> {
-  addInterface(abapInterface: IABAPInterface): IABAPClassBuilder;
-  addConstant(abapConstant: IABAPConstant): IABAPClassBuilder;
-  addMethod(abapClassMethod: IABAPClassMethod): IABAPClassBuilder;
+  setPublicSection(abapPublicSection: IABAPPublicSection): IABAPClassBuilder;
+  setProtectedSection(
+    abapProtectedSection: IABAPProtectedSection
+  ): IABAPClassBuilder;
+  setPrivateSection(abapPrivateSection: IABAPPrivateSection): IABAPClassBuilder;
 }

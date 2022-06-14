@@ -2,7 +2,7 @@ import { Renderer } from "../../../../builder/builder";
 import { IABAPConstant } from "../../../../variables/constant/IABAPConstant";
 import { IABAPVariable } from "../../../../variables/variable/IABAPVariable";
 import { IABAPInterface } from "../../../interface/IABAPInterface";
-import { IABAPMethod } from "../../../method/IABAPMethod";
+import { IABAPClassMethod } from "../../classMethod/IABAPClassMethod";
 import { ABAPSection } from "../ABAPSection";
 import { ABAPSectionType } from "../ABAPSectionType";
 import { IABAPPublicSection } from "./IABAPPublicSection";
@@ -15,7 +15,7 @@ export class ABAPPublicSection
     readonly abapInterfaces?: IABAPInterface[],
     abapConstants?: IABAPConstant[],
     abapVariables?: IABAPVariable[],
-    abapMethods?: IABAPMethod[]
+    abapMethods?: IABAPClassMethod[]
   ) {
     super(ABAPSectionType.public, abapConstants, abapVariables, abapMethods);
   }
