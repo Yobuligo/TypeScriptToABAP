@@ -8,6 +8,7 @@ var ABAPVariable = /** @class */ (function () {
         this.typeKind = typeKind;
         this.type = type;
         this.value = value;
+        this.keywordValue = "VALUE";
     }
     ABAPVariable.prototype.toABAP = function () {
         return "".concat(this.name, " ").concat(this.typeKind, " ").concat(this.type).concat(this.renderValue());
@@ -28,17 +29,17 @@ var ABAPVariable = /** @class */ (function () {
     ABAPVariable.prototype.renderBooleanValue = function () {
         var value = this.value.toLowerCase();
         if (value == "x" || value == "abap_true") {
-            return " VALUE abap_true";
+            return " ".concat(this.keywordValue, " abap_true");
         }
         if (value == " " || value == "abap_false") {
-            return " VALUE abap_false";
+            return " ".concat(this.keywordValue, " abap_false");
         }
     };
     ABAPVariable.prototype.renderIntValue = function () {
-        return " VALUE ".concat(this.value);
+        return " ".concat(this.keywordValue, " ").concat(this.value);
     };
     ABAPVariable.prototype.renderStringValue = function () {
-        return " VALUE '".concat(this.value, "'");
+        return " ".concat(this.keywordValue, " '").concat(this.value, "'");
     };
     return ABAPVariable;
 }());

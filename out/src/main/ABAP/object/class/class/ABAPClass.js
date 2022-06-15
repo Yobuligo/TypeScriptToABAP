@@ -28,19 +28,19 @@ var ABAPClass = /** @class */ (function () {
     ABAPClass.prototype.toABAP = function () {
         return "".concat(this.toABAPDefinition(), "\n\n").concat(this.toABAPImplementation());
     };
-    ABAPClass.prototype.renderMethodBody = function (abapMethods) {
-        if (abapMethods == undefined ||
-            abapMethods == null ||
-            abapMethods.length == 0) {
+    ABAPClass.prototype.renderMethodBody = function (abapClassMethods) {
+        if (abapClassMethods == undefined ||
+            abapClassMethods == null ||
+            abapClassMethods.length == 0) {
             return "";
         }
         var code = "";
-        abapMethods.forEach(function (method) {
+        abapClassMethods.forEach(function (classMethod) {
             if (code == "") {
-                code = "  METHOD ".concat(method.name, ".\n  ENDMETHOD.");
+                code = "  ".concat(classMethod.toABAPImplementation());
             }
             else {
-                code += "\n\n  METHOD ".concat(method.name, ".\n  ENDMETHOD.");
+                code += "\n\n  ".concat(classMethod.toABAPImplementation());
             }
         });
         return code;

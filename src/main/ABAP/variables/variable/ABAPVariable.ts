@@ -3,6 +3,8 @@ import { ABAPTypeKind } from "../../core/ABAPTypeKind";
 import { IABAPVariable } from "./IABAPVariable";
 
 export class ABAPVariable implements IABAPVariable {
+  protected keywordValue = "VALUE";
+
   constructor(
     readonly name: string,
     readonly typeKind: ABAPTypeKind,
@@ -11,9 +13,7 @@ export class ABAPVariable implements IABAPVariable {
   ) {}
 
   toABAP(): string {
-    return `${this.name} ${this.typeKind} ${
-      this.type
-    }${this.renderValue()}`;
+    return `${this.name} ${this.typeKind} ${this.type}${this.renderValue()}`;
   }
 
   private renderValue(): string {
@@ -34,19 +34,19 @@ export class ABAPVariable implements IABAPVariable {
   private renderBooleanValue(): string {
     const value = this.value.toLowerCase();
     if (value == "x" || value == "abap_true") {
-      return ` VALUE abap_true`;
+      return ` ${this.keywordValue} abap_true`;
     }
 
     if (value == " " || value == "abap_false") {
-      return ` VALUE abap_false`;
+      return ` ${this.keywordValue} abap_false`;
     }
   }
 
   private renderIntValue() {
-    return ` VALUE ${this.value}`;
+    return ` ${this.keywordValue} ${this.value}`;
   }
 
   private renderStringValue(): string {
-    return ` VALUE '${this.value}'`;
+    return ` ${this.keywordValue} '${this.value}'`;
   }
 }

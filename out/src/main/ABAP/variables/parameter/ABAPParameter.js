@@ -20,7 +20,9 @@ var ABAPVariable_1 = require("../variable/ABAPVariable");
 var ABAPParameter = /** @class */ (function (_super) {
     __extends(ABAPParameter, _super);
     function ABAPParameter(name, typeKind, type, value) {
-        return _super.call(this, name, typeKind, type, value) || this;
+        var _this = _super.call(this, name, typeKind, type, value) || this;
+        _this.keywordValue = "DEFAULT";
+        return _this;
     }
     return ABAPParameter;
 }(ABAPVariable_1.ABAPVariable));

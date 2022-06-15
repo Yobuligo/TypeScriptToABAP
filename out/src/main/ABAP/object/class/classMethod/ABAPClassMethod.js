@@ -28,11 +28,11 @@ var ABAPClassMethod = /** @class */ (function (_super) {
         return _super.prototype.toABAP.call(this);
     };
     ABAPClassMethod.prototype.toABAPImplementation = function () {
-        if (this.code == undefined || this.code == null) {
+        if (this.code == undefined || this.code == null || this.code.length == 0) {
             return "METHOD ".concat(this.name, ".\nENDMETHOD.");
         }
         else {
-            return "METHOD ".concat(this.name, ".\n\n").concat(this.code, "\nENDMETHOD.");
+            return "METHOD ".concat(this.name, ".\n\n").concat(this.code, "\n\nENDMETHOD.");
         }
     };
     return ABAPClassMethod;

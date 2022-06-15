@@ -20,10 +20,10 @@ export class ABAPClassMethod extends ABAPMethod implements IABAPClassMethod {
   }
 
   toABAPImplementation(): string {
-    if (this.code == undefined || this.code == null) {
+    if (this.code == undefined || this.code == null || this.code.length == 0) {
       return `METHOD ${this.name}.\nENDMETHOD.`;
     } else {
-      return `METHOD ${this.name}.\n\n${this.code}\nENDMETHOD.`;
+      return `METHOD ${this.name}.\n\n${this.code}\n\nENDMETHOD.`;
     }
   }
 }

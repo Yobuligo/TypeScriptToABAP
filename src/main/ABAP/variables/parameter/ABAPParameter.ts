@@ -4,11 +4,11 @@ import { ABAPTypeKind } from "../../core/ABAPTypeKind";
 import { ABAPVariable } from "../variable/ABAPVariable";
 import { IABAPParameter } from "./IABAPParameter";
 
-export class ABAPParameter<T extends ABAPParamKind>
+export class ABAPParameter<TABAPParamKind extends ABAPParamKind>
   extends ABAPVariable
-  implements IABAPParameter<T>
+  implements IABAPParameter<TABAPParamKind>
 {
-  readonly paramKind: T;
+  readonly paramKind: TABAPParamKind;
 
   constructor(
     name: string,
@@ -17,5 +17,6 @@ export class ABAPParameter<T extends ABAPParamKind>
     value?: string
   ) {
     super(name, typeKind, type, value);
+    this.keywordValue = "DEFAULT";
   }
 }

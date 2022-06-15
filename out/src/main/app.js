@@ -38,6 +38,7 @@ var Person = /** @class */ (function () {
     .addConstant((0, builder_1.Constant)("male", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "MALE"))
     .addMethod((0, builder_1.ClassMethod)("to_string").build())
     .addMethod((0, builder_1.ClassMethod)("to_string2")
+    .setCode(["lv_string = 'myStringValue'"])
     .addImpParameter((0, builder_1.ImpParameter)("iv_firstname", ABAPTypeKind_1.ABAPTypeKind.type, ABAPType_1.ABAPType.string, "Stacey"))
     .build())
     .build())

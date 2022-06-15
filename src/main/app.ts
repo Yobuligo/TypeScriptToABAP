@@ -63,6 +63,7 @@ println(
         .addMethod(ClassMethod("to_string").build())
         .addMethod(
           ClassMethod("to_string2")
+          .setCode([`lv_string = 'myStringValue'`])
             .addImpParameter(
               ImpParameter(
                 "iv_firstname",
@@ -70,7 +71,7 @@ println(
                 ABAPType.string,
                 "Stacey"
               )
-            )
+            )            
             .build()
         )
         .build()

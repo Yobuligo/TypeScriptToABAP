@@ -2838,6 +2838,3406 @@
                     "filename": "tsconfig.json"
                 }
             ]
+        },
+        {
+            "version": "0.2.7",
+            "counttime": "2022-06-14 15:55:15",
+            "filesum": 278,
+            "codesum": 3229,
+            "commentsum": 131,
+            "blanksum": 178,
+            "statistics": {
+                ".map": {
+                    "code": 107,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".js": {
+                    "code": 1781,
+                    "comment": 119,
+                    "blank": 0
+                },
+                ".ts": {
+                    "code": 1333,
+                    "comment": 12,
+                    "blank": 178
+                },
+                ".json": {
+                    "code": 8,
+                    "comment": 0,
+                    "blank": 0
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 1,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "app.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 1,
+                    "filename": "out\\app.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\app.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 75,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\builder\\builder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\builder\\builder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPClass.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPClass.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 39,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPClassBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPClassBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 12,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPMethod.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPMethod.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 16,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPParameter.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPParameter.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPTypeKind.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPTypeKind.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 32,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPVariable.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPVariable.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\IABAPClass.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\IABAPClass.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\IABAPClassBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\IABAPClassBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\IABAPClassSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\IABAPClassSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\IABAPParameterBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\IABAPParameterBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 23,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\ABAPClassSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\ABAPClassSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 19,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\ABAPClassSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\ABAPClassSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\ABAPClassSectionType.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\ABAPClassSectionType.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\IABAPClassSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\IABAPClassSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\IABAPClassSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\IABAPClassSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 12,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPDataType.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPDataType.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPParamKind.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPParamKind.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 24,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPRenderer.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPRenderer.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPType.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPType.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPTypeKind.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPTypeKind.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\IABAP.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\IABAP.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\IABAPBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\IABAPBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\IABAPRenderer.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\IABAPRenderer.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 124,
+                    "comment": 4,
+                    "filename": "out\\src\\main\\ABAP\\core\\renderer\\ABAPRenderer.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\renderer\\ABAPRenderer.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\renderer\\IABAPRenderer.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\renderer\\IABAPRenderer.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\IABAPable.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\IABAPable.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 19,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\ABAPClass.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\ABAPClass.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 14,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\ABAPClassBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\ABAPClassBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 65,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\class\\ABAPClass.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\class\\ABAPClass.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 26,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\class\\ABAPClassBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\class\\ABAPClassBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\class\\IABAPClass.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\class\\IABAPClass.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\class\\IABAPClassBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\class\\IABAPClassBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 40,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\classMethod\\ABAPClassMethod.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\classMethod\\ABAPClassMethod.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 54,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\classMethod\\ABAPClassMethodBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\classMethod\\ABAPClassMethodBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\classMethod\\IABAPClassMethod.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\classMethod\\IABAPClassMethod.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\classMethod\\IABAPClassMethodBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\classMethod\\IABAPClassMethodBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\IABAPClass.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\IABAPClass.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\IABAPClassBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\IABAPClassBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\IABAPDefinition.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\IABAPDefinition.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\IABAPImplementation.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\IABAPImplementation.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 23,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPClassSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPClassSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 19,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPClassSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPClassSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPClassSectionType.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPClassSectionType.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 27,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPSectionType.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPSectionType.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPClassSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPClassSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPClassSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPClassSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPPrivateSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPPrivateSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPProtectedSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPProtectedSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPPublicSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPPublicSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 28,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\private\\ABAPPrivateSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\private\\ABAPPrivateSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 31,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\private\\ABAPPrivateSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\private\\ABAPPrivateSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\private\\IABAPPrivateSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\private\\IABAPPrivateSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\private\\IABAPPrivateSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\private\\IABAPPrivateSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 28,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\protected\\ABAPProtectedSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\protected\\ABAPProtectedSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 31,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\protected\\ABAPProtectedSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\protected\\ABAPProtectedSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\protected\\IABAPProtectedSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\protected\\IABAPProtectedSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\protected\\IABAPProtectedSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\protected\\IABAPProtectedSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 57,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\public\\ABAPPublicSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\public\\ABAPPublicSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 37,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\public\\ABAPPublicSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\public\\ABAPPublicSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\public\\IABAPPublicSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\public\\IABAPPublicSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\public\\IABAPPublicSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\public\\IABAPPublicSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 37,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\interface\\ABAPInterface.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\interface\\ABAPInterface.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 31,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\interface\\ABAPInterfaceBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\interface\\ABAPInterfaceBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\interface\\IABAPInterface.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\interface\\IABAPInterface.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\interface\\IABAPInterfaceBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\interface\\IABAPInterfaceBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 48,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\method\\ABAPMethod.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\method\\ABAPMethod.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 34,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\method\\ABAPMethodBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\method\\ABAPMethodBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\method\\IABAPMethod.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\method\\IABAPMethod.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\method\\IABAPMethodBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\method\\IABAPMethodBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 38,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\object\\ABAPObject.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\object\\ABAPObject.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 28,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\object\\ABAPObjectBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\object\\ABAPObjectBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\object\\IABAPObject.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\object\\IABAPObject.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\object\\IABAPObjectBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\object\\IABAPObjectBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\parameter\\IABAPImpParameter.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\parameter\\IABAPImpParameter.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 45,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\parameter\\ABAPParameter.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\parameter\\ABAPParameter.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 29,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\parameter\\ABAPParameterBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\parameter\\ABAPParameterBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\parameter\\IABAPParameter.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\parameter\\IABAPParameter.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\parameter\\IABAPParameterBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\parameter\\IABAPParameterBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 30,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variable\\ABAPVariable.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variable\\ABAPVariable.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 39,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variable\\ABAPVariableBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variable\\ABAPVariableBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variable\\IABAPVariable.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variable\\IABAPVariable.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variable\\IABAPVariableBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variable\\IABAPVariableBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 30,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\constant\\ABAPConstant.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\constant\\ABAPConstant.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 30,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\constant\\ABAPConstants.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\constant\\ABAPConstants.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\constant\\IABAPConstant.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\constant\\IABAPConstant.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\constant\\IABAPConstants.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\constant\\IABAPConstants.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 30,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\dataDefinition\\ABAPDataDefinition.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\dataDefinition\\ABAPDataDefinition.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\dataDefinition\\IABAPDataDefinition.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\dataDefinition\\IABAPDataDefinition.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 27,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\parameter\\ABAPParameter.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\parameter\\ABAPParameter.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\parameter\\IABAPParameter.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\parameter\\IABAPParameter.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 45,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\variable\\ABAPVariable.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\variable\\ABAPVariable.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\variable\\IABAPVariable.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\variable\\IABAPVariable.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 93,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\app.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\app.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\Class.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\Class.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 21,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\core\\ExtensionFunctions.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\core\\ExtensionFunctions.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\core\\MeasureTimeMillis.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\core\\MeasureTimeMillis.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 4,
+                    "filename": "out\\src\\main\\core\\NewLine.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\core\\NewLine.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 4,
+                    "filename": "out\\src\\main\\core\\Println.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\core\\Println.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\core\\Repeat.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\core\\Repeat.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 4,
+                    "filename": "out\\src\\main\\core\\TODO.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\core\\TODO.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\IABAPable.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\IABAPable.js.map"
+                },
+                {
+                    "blank": 15,
+                    "code": 108,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\builder\\builder.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\core\\ABAPParamKind.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\core\\ABAPType.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\core\\ABAPTypeKind.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\core\\IABAP.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\core\\IABAPBuilder.ts"
+                },
+                {
+                    "blank": 20,
+                    "code": 112,
+                    "comment": 3,
+                    "filename": "src\\main\\ABAP\\core\\renderer\\ABAPRenderer.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\core\\renderer\\IABAPRenderer.ts"
+                },
+                {
+                    "blank": 10,
+                    "code": 71,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\class\\ABAPClass.ts"
+                },
+                {
+                    "blank": 6,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\class\\ABAPClassBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\class\\IABAPClass.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\class\\IABAPClassBuilder.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\classMethod\\ABAPClassMethod.ts"
+                },
+                {
+                    "blank": 8,
+                    "code": 53,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\classMethod\\ABAPClassMethodBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\classMethod\\IABAPClassMethod.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\classMethod\\IABAPClassMethodBuilder.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\IABAPDefinition.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\IABAPImplementation.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 27,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\ABAPSection.ts"
+                },
+                {
+                    "blank": 5,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\ABAPSectionBuilder.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\ABAPSectionType.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\IABAPSection.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\IABAPSectionBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 18,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\private\\ABAPPrivateSection.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\private\\ABAPPrivateSectionBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\private\\IABAPPrivateSection.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\private\\IABAPPrivateSectionBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 18,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\protected\\ABAPProtectedSection.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\protected\\ABAPProtectedSectionBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\protected\\IABAPProtectedSection.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\protected\\IABAPProtectedSectionBuilder.ts"
+                },
+                {
+                    "blank": 5,
+                    "code": 48,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\public\\ABAPPublicSection.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\public\\ABAPPublicSectionBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\public\\IABAPPublicSection.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\public\\IABAPPublicSectionBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\interface\\ABAPInterface.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\interface\\ABAPInterfaceBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\interface\\IABAPInterface.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\interface\\IABAPInterfaceBuilder.ts"
+                },
+                {
+                    "blank": 9,
+                    "code": 49,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\method\\ABAPMethod.ts"
+                },
+                {
+                    "blank": 7,
+                    "code": 45,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\method\\ABAPMethodBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\method\\IABAPMethod.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\method\\IABAPMethodBuilder.ts"
+                },
+                {
+                    "blank": 4,
+                    "code": 38,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\object\\ABAPObject.ts"
+                },
+                {
+                    "blank": 6,
+                    "code": 28,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\object\\ABAPObjectBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\object\\IABAPObject.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\object\\IABAPObjectBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\variables\\constant\\ABAPConstant.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\variables\\constant\\IABAPConstant.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\variables\\dataDefinition\\ABAPDataDefinition.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\variables\\dataDefinition\\IABAPDataDefinition.ts"
+                },
+                {
+                    "blank": 2,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\variables\\parameter\\ABAPParameter.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\variables\\parameter\\IABAPParameter.ts"
+                },
+                {
+                    "blank": 8,
+                    "code": 44,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\variables\\variable\\ABAPVariable.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\variables\\variable\\IABAPVariable.ts"
+                },
+                {
+                    "blank": 23,
+                    "code": 158,
+                    "comment": 0,
+                    "filename": "src\\main\\app.ts"
+                },
+                {
+                    "blank": 7,
+                    "code": 32,
+                    "comment": 0,
+                    "filename": "src\\main\\core\\ExtensionFunctions.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "src\\main\\core\\MeasureTimeMillis.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 3,
+                    "filename": "src\\main\\core\\NewLine.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 3,
+                    "filename": "src\\main\\core\\Println.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\main\\core\\Repeat.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 3,
+                    "filename": "src\\main\\core\\TODO.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "tsconfig.json"
+                }
+            ]
+        },
+        {
+            "version": "0.2.7",
+            "counttime": "2022-06-14 22:07:24",
+            "filesum": 278,
+            "codesum": 3230,
+            "commentsum": 131,
+            "blanksum": 178,
+            "statistics": {
+                ".json": {
+                    "code": 8,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".ts": {
+                    "code": 1333,
+                    "comment": 12,
+                    "blank": 178
+                },
+                ".js": {
+                    "code": 1782,
+                    "comment": 119,
+                    "blank": 0
+                },
+                ".map": {
+                    "code": 107,
+                    "comment": 0,
+                    "blank": 0
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 1,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "app.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 1,
+                    "filename": "out\\app.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\app.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 75,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\builder\\builder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\builder\\builder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPClass.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPClass.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 39,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPClassBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPClassBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 12,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPMethod.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPMethod.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 16,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPParameter.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPParameter.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPTypeKind.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPTypeKind.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 32,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPVariable.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\ABAPVariable.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\IABAPClass.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\IABAPClass.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\IABAPClassBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\IABAPClassBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\IABAPClassSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\IABAPClassSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\IABAPParameterBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\IABAPParameterBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 23,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\ABAPClassSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\ABAPClassSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 19,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\ABAPClassSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\ABAPClassSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\ABAPClassSectionType.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\ABAPClassSectionType.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\IABAPClassSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\IABAPClassSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\IABAPClassSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\class\\section\\IABAPClassSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 12,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPDataType.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPDataType.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPParamKind.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPParamKind.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 24,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPRenderer.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPRenderer.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPType.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPType.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPTypeKind.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\ABAPTypeKind.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\IABAP.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\IABAP.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\IABAPBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\IABAPBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\IABAPRenderer.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\IABAPRenderer.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 124,
+                    "comment": 4,
+                    "filename": "out\\src\\main\\ABAP\\core\\renderer\\ABAPRenderer.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\renderer\\ABAPRenderer.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\core\\renderer\\IABAPRenderer.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\core\\renderer\\IABAPRenderer.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\IABAPable.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\IABAPable.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 19,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\ABAPClass.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\ABAPClass.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 14,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\ABAPClassBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\ABAPClassBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 65,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\class\\ABAPClass.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\class\\ABAPClass.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 26,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\class\\ABAPClassBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\class\\ABAPClassBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\class\\IABAPClass.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\class\\IABAPClass.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\class\\IABAPClassBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\class\\IABAPClassBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 40,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\classMethod\\ABAPClassMethod.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\classMethod\\ABAPClassMethod.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 54,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\classMethod\\ABAPClassMethodBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\classMethod\\ABAPClassMethodBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\classMethod\\IABAPClassMethod.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\classMethod\\IABAPClassMethod.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\classMethod\\IABAPClassMethodBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\classMethod\\IABAPClassMethodBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\IABAPClass.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\IABAPClass.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\IABAPClassBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\IABAPClassBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\IABAPDefinition.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\IABAPDefinition.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\IABAPImplementation.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\IABAPImplementation.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 23,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPClassSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPClassSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 19,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPClassSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPClassSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPClassSectionType.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPClassSectionType.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 27,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPSectionType.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\ABAPSectionType.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPClassSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPClassSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPClassSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPClassSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPPrivateSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPPrivateSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPProtectedSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPProtectedSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPPublicSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPPublicSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\IABAPSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 28,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\private\\ABAPPrivateSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\private\\ABAPPrivateSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 31,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\private\\ABAPPrivateSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\private\\ABAPPrivateSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\private\\IABAPPrivateSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\private\\IABAPPrivateSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\private\\IABAPPrivateSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\private\\IABAPPrivateSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 28,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\protected\\ABAPProtectedSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\protected\\ABAPProtectedSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 31,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\protected\\ABAPProtectedSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\protected\\ABAPProtectedSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\protected\\IABAPProtectedSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\protected\\IABAPProtectedSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\protected\\IABAPProtectedSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\protected\\IABAPProtectedSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 57,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\public\\ABAPPublicSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\public\\ABAPPublicSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 37,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\public\\ABAPPublicSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\public\\ABAPPublicSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\public\\IABAPPublicSection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\public\\IABAPPublicSection.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\public\\IABAPPublicSectionBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\class\\section\\public\\IABAPPublicSectionBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 37,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\interface\\ABAPInterface.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\interface\\ABAPInterface.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 31,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\interface\\ABAPInterfaceBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\interface\\ABAPInterfaceBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\interface\\IABAPInterface.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\interface\\IABAPInterface.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\interface\\IABAPInterfaceBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\interface\\IABAPInterfaceBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 48,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\method\\ABAPMethod.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\method\\ABAPMethod.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 34,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\method\\ABAPMethodBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\method\\ABAPMethodBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\method\\IABAPMethod.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\method\\IABAPMethod.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\method\\IABAPMethodBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\method\\IABAPMethodBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 38,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\object\\ABAPObject.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\object\\ABAPObject.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 28,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\object\\ABAPObjectBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\object\\ABAPObjectBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\object\\IABAPObject.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\object\\IABAPObject.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\object\\IABAPObjectBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\object\\IABAPObjectBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\object\\parameter\\IABAPImpParameter.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\object\\parameter\\IABAPImpParameter.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 45,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\parameter\\ABAPParameter.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\parameter\\ABAPParameter.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 29,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\parameter\\ABAPParameterBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\parameter\\ABAPParameterBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\parameter\\IABAPParameter.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\parameter\\IABAPParameter.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\parameter\\IABAPParameterBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\parameter\\IABAPParameterBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 30,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variable\\ABAPVariable.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variable\\ABAPVariable.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 39,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variable\\ABAPVariableBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variable\\ABAPVariableBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variable\\IABAPVariable.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variable\\IABAPVariable.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variable\\IABAPVariableBuilder.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variable\\IABAPVariableBuilder.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 30,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\constant\\ABAPConstant.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\constant\\ABAPConstant.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 30,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\constant\\ABAPConstants.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\constant\\ABAPConstants.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\constant\\IABAPConstant.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\constant\\IABAPConstant.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\constant\\IABAPConstants.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\constant\\IABAPConstants.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 30,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\dataDefinition\\ABAPDataDefinition.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\dataDefinition\\ABAPDataDefinition.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\dataDefinition\\IABAPDataDefinition.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\dataDefinition\\IABAPDataDefinition.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 27,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\parameter\\ABAPParameter.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\parameter\\ABAPParameter.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\parameter\\IABAPParameter.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\parameter\\IABAPParameter.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 45,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\variable\\ABAPVariable.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\variable\\ABAPVariable.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\ABAP\\variables\\variable\\IABAPVariable.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\ABAP\\variables\\variable\\IABAPVariable.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 94,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\app.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\app.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\Class.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\Class.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 21,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\core\\ExtensionFunctions.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\core\\ExtensionFunctions.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\core\\MeasureTimeMillis.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\core\\MeasureTimeMillis.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 4,
+                    "filename": "out\\src\\main\\core\\NewLine.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\core\\NewLine.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 4,
+                    "filename": "out\\src\\main\\core\\Println.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\core\\Println.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\core\\Repeat.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\core\\Repeat.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 4,
+                    "filename": "out\\src\\main\\core\\TODO.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\core\\TODO.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "out\\src\\main\\IABAPable.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "out\\src\\main\\IABAPable.js.map"
+                },
+                {
+                    "blank": 15,
+                    "code": 108,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\builder\\builder.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\core\\ABAPParamKind.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\core\\ABAPType.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\core\\ABAPTypeKind.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\core\\IABAP.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\core\\IABAPBuilder.ts"
+                },
+                {
+                    "blank": 20,
+                    "code": 112,
+                    "comment": 3,
+                    "filename": "src\\main\\ABAP\\core\\renderer\\ABAPRenderer.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\core\\renderer\\IABAPRenderer.ts"
+                },
+                {
+                    "blank": 10,
+                    "code": 70,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\class\\ABAPClass.ts"
+                },
+                {
+                    "blank": 6,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\class\\ABAPClassBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\class\\IABAPClass.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\class\\IABAPClassBuilder.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\classMethod\\ABAPClassMethod.ts"
+                },
+                {
+                    "blank": 8,
+                    "code": 53,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\classMethod\\ABAPClassMethodBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\classMethod\\IABAPClassMethod.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\classMethod\\IABAPClassMethodBuilder.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\IABAPDefinition.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\IABAPImplementation.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 27,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\ABAPSection.ts"
+                },
+                {
+                    "blank": 5,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\ABAPSectionBuilder.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\ABAPSectionType.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\IABAPSection.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\IABAPSectionBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 18,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\private\\ABAPPrivateSection.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\private\\ABAPPrivateSectionBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\private\\IABAPPrivateSection.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\private\\IABAPPrivateSectionBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 18,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\protected\\ABAPProtectedSection.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\protected\\ABAPProtectedSectionBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\protected\\IABAPProtectedSection.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\protected\\IABAPProtectedSectionBuilder.ts"
+                },
+                {
+                    "blank": 5,
+                    "code": 48,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\public\\ABAPPublicSection.ts"
+                },
+                {
+                    "blank": 3,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\public\\ABAPPublicSectionBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\public\\IABAPPublicSection.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\class\\section\\public\\IABAPPublicSectionBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\interface\\ABAPInterface.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\interface\\ABAPInterfaceBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\interface\\IABAPInterface.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\interface\\IABAPInterfaceBuilder.ts"
+                },
+                {
+                    "blank": 9,
+                    "code": 49,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\method\\ABAPMethod.ts"
+                },
+                {
+                    "blank": 7,
+                    "code": 45,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\method\\ABAPMethodBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\method\\IABAPMethod.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\method\\IABAPMethodBuilder.ts"
+                },
+                {
+                    "blank": 4,
+                    "code": 38,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\object\\ABAPObject.ts"
+                },
+                {
+                    "blank": 6,
+                    "code": 28,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\object\\ABAPObjectBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\object\\IABAPObject.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\object\\object\\IABAPObjectBuilder.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\variables\\constant\\ABAPConstant.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\variables\\constant\\IABAPConstant.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\variables\\dataDefinition\\ABAPDataDefinition.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\variables\\dataDefinition\\IABAPDataDefinition.ts"
+                },
+                {
+                    "blank": 2,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\variables\\parameter\\ABAPParameter.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\variables\\parameter\\IABAPParameter.ts"
+                },
+                {
+                    "blank": 8,
+                    "code": 44,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\variables\\variable\\ABAPVariable.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\main\\ABAP\\variables\\variable\\IABAPVariable.ts"
+                },
+                {
+                    "blank": 23,
+                    "code": 159,
+                    "comment": 0,
+                    "filename": "src\\main\\app.ts"
+                },
+                {
+                    "blank": 7,
+                    "code": 32,
+                    "comment": 0,
+                    "filename": "src\\main\\core\\ExtensionFunctions.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "src\\main\\core\\MeasureTimeMillis.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 3,
+                    "filename": "src\\main\\core\\NewLine.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 3,
+                    "filename": "src\\main\\core\\Println.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\main\\core\\Repeat.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 3,
+                    "filename": "src\\main\\core\\TODO.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "tsconfig.json"
+                }
+            ]
         }
     ]
 }

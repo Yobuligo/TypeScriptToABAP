@@ -1,5 +1,4 @@
 import { Renderer } from "../../../builder/builder";
-import { IABAPMethod } from "../../method/IABAPMethod";
 import { IABAPClassMethod } from "../classMethod/IABAPClassMethod";
 import { IABAPPrivateSection } from "../section/private/IABAPPrivateSection";
 import { IABAPProtectedSection } from "../section/protected/IABAPProtectedSection";
@@ -36,21 +35,21 @@ export class ABAPClass implements IABAPClass {
     return `${this.toABAPDefinition()}\n\n${this.toABAPImplementation()}`;
   }
 
-  private renderMethodBody(abapMethods?: IABAPMethod[]): string {
+  private renderMethodBody(abapClassMethods?: IABAPClassMethod[]): string {
     if (
-      abapMethods == undefined ||
-      abapMethods == null ||
-      abapMethods.length == 0
+      abapClassMethods == undefined ||
+      abapClassMethods == null ||
+      abapClassMethods.length == 0
     ) {
       return "";
     }
 
     let code = "";
-    abapMethods.forEach((method) => {
+    abapClassMethods.forEach((classMethod) => {
       if (code == "") {
-        code = `  METHOD ${method.name}.\n  ENDMETHOD.`;
+        code = `  ${classMethod.toABAPImplementation()}`;
       } else {
-        code += `\n\n  METHOD ${method.name}.\n  ENDMETHOD.`;
+        code += `\n\n  ${classMethod.toABAPImplementation()}`;
       }
     });
     return code;
